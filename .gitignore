@@ -1,0 +1,15 @@
+# ==== Node & Angular (Frontend) ====
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# ==== Java & IntelliJ (Backend) ====
+backend/target/
+backend/out/
+.idea/
+*.iml
+*.class
+
+# ==== Sistemas Operativos ====
+.DS_Store
+Thumbs.db
