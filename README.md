@@ -1,5 +1,44 @@
-# upc-pre-202610-1asi0729--11818---SmartTecnologies
+<div align="center">
+  <img src="Resources/UPC/UPC-Logo.png" alt="Logo-UPC" width="150">
+
+## Universidad Peruana de Ciencias Aplicadas
+
+**Ingeniería de Software**
+
+**Ciclo:** 2026-10
+
+**Curso:** Desarrollo de Aplicaciones Open Source
+
+**Sección:** 11881
+
+**Profesor:** Efraín Ricardo Bautista Ubillús
+
+
+----
+## Informe de Trabajo Final
+### SmartTecnologies
+
+### SmartLock
+#### Relación de integrantes
+<br>
+
+| Integrante                      | Código     |
+|---------------------------------|------------|
+| Palacios Tinoco Adrian Fernando | u202410817 |
+|                                 |            |
+|                                 |            |
+|                                 |            |
+|                                 |            |
+
+</div>
+
+<br><div align="center"><h3>Abril 2026</h3></div><br>
+<div style="text-align: justify;"></div>
+
+<br>
+---
 # Capítulo I: Introducción
+---
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 **Área:** Seguridad Digital y Control de Accesos
@@ -22,6 +61,8 @@
 
     * **Compromiso con la Excelencia:** Trabajamos para que nuestra plataforma soporte las exigencias de un entorno real, ofreciendo una herramienta robusta que aguante el flujo constante de usuarios sin perder fiabilidad.
 ### 1.1.2. Perfiles de integrantes del equipo
+
+
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
