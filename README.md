@@ -36,7 +36,20 @@
 <div style="text-align: justify;"></div>
 
 <br>
+
 ---
+### Registro de Versiones
+
+<div align="justify">
+
+|**Versión**| **Fecha**  | **Autor**                                          | **Descripción de modificación**                                                                                                                 |
+| - |------------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|1\.0| 07/04/2026 | Adrian Fernando Palacios Tinoco                    | Se agrego parte de la estructura del capitulo I del informe, asimismo se agrego la carátula, el startup profile; y antecedentes y problemáticas |
+
+</div><br><br>
+
+---
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -62,7 +75,13 @@
     * **Compromiso con la Excelencia:** Trabajamos para que nuestra plataforma soporte las exigencias de un entorno real, ofreciendo una herramienta robusta que aguante el flujo constante de usuarios sin perder fiabilidad.
 ### 1.1.2. Perfiles de integrantes del equipo
 
-
+| **Integrante**                                   | **Perfil** |                                                       **Imagen**                                                       |
+|:-------------------------------------------------| :--- |:----------------------------------------------------------------------------------------------------------------------:|
+| **Nombre y apellido**                            |
+| **Nombre y apellido**                            |
+| **Nombre y apellido**                            |
+| **Nombre y apellido**                            |
+| **Palacios Tinoco Adrian Fernando - u202410817** | Estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Me encuentro cursando el 5to ciclo de la carrera. Cuento con habilidades tanto blandas como tecnicas. Por un lado, entre mis habilidades blandas destaco el trabajo en equipo, comunicacion efectiva y escucha activa. Por otro lado, mis habilidades entre mis habilidades tecnicas es el diseño de base de datos, analisis de requisitos, diseño de software y como lenguajes destaco mi conocimiento en C++, JavaScript, Python, Java y SQL. Me comprometo a que el proyecto **PircaIndustries** se lleve a cabo con éxito brindando responsabilidad y puntualidad en las entregas y avances del proyecto. | <img src="Resources/Students profiles/Adrian-Palacios.jpg" alt="Foto de Adrian Fernando Palacios Tinoco" width="150"/> |
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
