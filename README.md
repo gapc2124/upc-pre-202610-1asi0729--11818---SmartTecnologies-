@@ -166,6 +166,8 @@ Nuestra visión es proporcionar a las empresas una plataforma web inteligente y 
 
 ## 2.1 Competidores
 
+**Competidor 1**
+
 ### 2.1.1 Análisis Competitivo
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
