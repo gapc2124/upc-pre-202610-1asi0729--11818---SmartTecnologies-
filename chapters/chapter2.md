@@ -70,7 +70,7 @@ Es una solución global de gestión de accesos de nivel empresarial que centrali
 
 # Competitive Analysis Landscape
 
-
+<div align="justify">
 | ¿Por qué llevar a cabo el desarrollo de un software de gestion de accesos habiendo modelos internacionales que gestionan la seguridad a nivel empresarial? | Escriba en el recuadro la pregunta que busca responder o el objetivo de este análisis. |
 
 | :--- | :--- |
@@ -110,6 +110,7 @@ Es una solución global de gestión de accesos de nivel empresarial que centrali
 | | Oportunidades | [Existe un mercado masivo en la digitalización de PYMES y eventos temporales que buscan seguridad profesional sin contratos de mantenimiento pesados.] | [El crecimiento del trabajo híbrido impulsa la demanda de soluciones que permitan gestionar oficinas desde cualquier parte del mundo.] | [Expansión hacia soluciones de ciudades inteligentes y automatización de edificios en el mercado inmobiliario peruano en auge.] | [La creciente regulación sobre el control de horas trabajadas y bienestar laboral obliga a las grandes empresas a adoptar sistemas tan robustos como este.] |
 
 | | Amenazas | [La entrada de gigantes del software que integren funciones de acceso gratuitas en sus ecosistemas de oficina (como Microsoft o Google).] | [Startups con tecnologías puramente móviles (NFC/Bluetooth) que eliminan la necesidad de cualquier hardware intermedio.] | [El rechazo progresivo a los métodos de contacto físico (biometría de huella) frente a tecnologías de reconocimiento remoto o digital.] | [Herramientas de gestión de proyectos y comunicación que están añadiendo módulos de control de tiempo (Time Tracking) mucho más intuitivos.] |
+</div>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 
