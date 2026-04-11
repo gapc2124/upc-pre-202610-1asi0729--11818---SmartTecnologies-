@@ -161,12 +161,16 @@ Nuestra visión es proporcionar a las empresas una plataforma web inteligente y 
 
 ---
 
+Para el desarrollo de **Smart Lock**, se han definido los siguientes segmentos objetivo, integrando sus perfiles, necesidades y comportamientos en la gestión de accesos:
+
+| **Segmento** | **Descripción del Perfil** | **Necesidades Principales** | **Características Psicográficas y Comportamentales** |
+| :--- | :--- | :--- | :--- |
+| **Gerentes de Operaciones, TI y Seguridad Corporativa** | Líderes responsables de una empresa preocupada por la infraestructura y seguridad de sus espacios de trabajo, desde startups en crecimiento hasta corporativos con múltiples oficinas y alto flujo de personal. | - Centralizar el control de accesos de múltiples sedes en una sola plataforma.<br>- Eliminar la vulnerabilidad de las llaves físicas y tarjetas clonables.<br>- Automatizar el registro de asistencia y la revocación inmediata de permisos a gran escala. | - Priorizan la escalabilidad y la integración con herramientas SaaS existentes.<br>- Toman decisiones basadas en datos y registros de auditoría inmutables.<br>- Buscan máxima eficiencia operativa reduciendo el error humano en porterías. |
+| **Administradores de Eventos y Espacios de Alto Tráfico** | Profesionales encargados de la logística en centros de convenciones, ferias o complejos de oficinas que requieren gestionar entradas masivas por periodos específicos. | - Creación rápida de credenciales digitales temporales para invitados o contratistas.<br>- Monitoreo en tiempo real de la ocupación por zonas para evitar aglomeraciones.<br>- Despliegue del sistema sin depender de instalaciones de hardware pesadas o fijas. | - Valoran la agilidad y la capacidad de respuesta inmediata ante incidentes.<br>- Están familiarizados con protocolos de seguridad dinámica (2FA y alertas móviles).<br>- Prefieren interfaces intuitivas que permitan delegar tareas de control de forma sencilla. |
+
 # Capítulo II: Requirements Elicitation & Analysis
 
-
 ## 2.1 Competidores
-
-**Competidor 1**
 
 ### 2.1.1 Análisis Competitivo
 
