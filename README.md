@@ -26,7 +26,7 @@
 |---------------------------------|------------|
 | Palacios Tinoco Adrian Fernando | u202410817 |
 | Peñaranda Caldas Gabriel Augusto| u202210836 |
-|                                 |            |
+| Huaman Oscco Aldo Jesus         | u20231h067 |
 |                                 |            |
 |                                 |            |
 
@@ -79,7 +79,7 @@
 |:-------------|----------|:--------:|
 | **Nombre y apellido**|
 | **Nombre y apellido**|
-| **Nombre y apellido**|
+| **Huaman Oscco Aldo Jesus - u20231h067**|Estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Actualmente cursando el 5to ciclo de la carrera, asumo la responsabilidad de investigar y aplicar conocimientos y habilidades de desarrollo en **SmarLock** de manera eficiente para culminarlo con exito.|<img src="Resources/Students profiles/Aldo-Jesus.png" alt="Foto de Aldo Jesus Huaman Oscco" width="150"/> |
 | **Peñaranda Caldas Gabriel Augusto - u202210836**|Estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Me encuentro llevando cursos de 5to y 6to ciclo de la carrera. Cuento con habilidades sobresalientes en cloud, python, typescript y UX/UI. Además se ser alguien muy preocupado por mis compañeros de equipo y amigable que las demás personas. Me comprometo a que el proyecto **SmartLock** se lleve a cabo con éxito brindando responsabilidad y puntualidad en las entregas y avances del proyecto.|<img src="Resources/Students profiles/Gabriel-Peniaranda.jpg" alt="Foto de Adrian Fernando Palacios Tinoco" width="150"/> |
 | **Palacios Tinoco Adrian Fernando - u202410817** | Estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Me encuentro cursando el 5to ciclo de la carrera. Cuento con habilidades tanto blandas como tecnicas. Por un lado, entre mis habilidades blandas destaco el trabajo en equipo, comunicacion efectiva y escucha activa. Por otro lado, mis habilidades entre mis habilidades tecnicas es el diseño de base de datos, analisis de requisitos, diseño de software y como lenguajes destaco mi conocimiento en C++, JavaScript, Python, Java y SQL. Me comprometo a que el proyecto **SmartLock** se lleve a cabo con éxito brindando responsabilidad y puntualidad en las entregas y avances del proyecto. | <img src="Resources/Students profiles/Adrian-Palacios.jpg" alt="Foto de Adrian Fernando Palacios Tinoco" width="150"/> |
 
@@ -161,8 +161,14 @@ Nuestra visión es proporcionar a las empresas una plataforma web inteligente y 
 
 ---
 
-# Capítulo II: Requirements Elicitation & Analysis
+Para el desarrollo de **Smart Lock**, se han definido los siguientes segmentos objetivo, integrando sus perfiles, necesidades y comportamientos en la gestión de accesos:
 
+| **Segmento** | **Descripción del Perfil** | **Necesidades Principales** | **Características Psicográficas y Comportamentales** |
+| :--- | :--- | :--- | :--- |
+| **Gerentes de Operaciones, TI y Seguridad Corporativa** | Líderes responsables de una empresa preocupada por la infraestructura y seguridad de sus espacios de trabajo, desde startups en crecimiento hasta corporativos con múltiples oficinas y alto flujo de personal. | - Centralizar el control de accesos de múltiples sedes en una sola plataforma.<br>- Eliminar la vulnerabilidad de las llaves físicas y tarjetas clonables.<br>- Automatizar el registro de asistencia y la revocación inmediata de permisos a gran escala. | - Priorizan la escalabilidad y la integración con herramientas SaaS existentes.<br>- Toman decisiones basadas en datos y registros de auditoría inmutables.<br>- Buscan máxima eficiencia operativa reduciendo el error humano en porterías. |
+| **Administradores de Eventos y Espacios de Alto Tráfico** | Profesionales encargados de la logística en centros de convenciones, ferias o complejos de oficinas que requieren gestionar entradas masivas por periodos específicos. | - Creación rápida de credenciales digitales temporales para invitados o contratistas.<br>- Monitoreo en tiempo real de la ocupación por zonas para evitar aglomeraciones.<br>- Despliegue del sistema sin depender de instalaciones de hardware pesadas o fijas. | - Valoran la agilidad y la capacidad de respuesta inmediata ante incidentes.<br>- Están familiarizados con protocolos de seguridad dinámica (2FA y alertas móviles).<br>- Prefieren interfaces intuitivas que permitan delegar tareas de control de forma sencilla. |
+
+# Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1 Competidores
 
@@ -173,6 +179,58 @@ Nuestra visión es proporcionar a las empresas una plataforma web inteligente y 
 ## 2.2 Entrevistas
 
 ### 2.2.1 Diseño de entrevistas
+
+Para validar la propuesta de valor de **SmartLock**, se diseñaron entrevistas dirigidas a dos segmentos clave: **empresarios (dueños o administradores de negocios)** y **organizadores de eventos**, quienes enfrentan problemáticas relacionadas con el control de accesos y la seguridad en sus espacios.
+
+El objetivo de estas entrevistas es comprender sus necesidades, problemas actuales, comportamientos y nivel de interés en una solución digital de control de accesos.
+
+---
+
+#### Segmento 1: Empresarios (dueños o administradores)
+
+> **Objetivo:** Entender cómo gestionan actualmente el acceso a sus instalaciones, identificar problemas de seguridad y evaluar su disposición hacia soluciones digitales.
+
+**Cuestionario de validación:**
+
+1.  ¿Cómo gestionas actualmente el acceso de personas a tu negocio o instalaciones?
+2.  ¿Qué tipo de problemas has tenido relacionados con el control de accesos?
+3.  ¿Utilizas algún sistema digital o todo es manual? ¿Por qué?
+4.  ¿Qué tan importante es para ti saber quién entra y sale en tiempo real?
+5.  ¿Has tenido alguna situación de acceso no autorizado? ¿Cómo la manejaste?
+6.  ¿Qué tan complicado es actualmente revocar el acceso a exempleados o terceros?
+7.  ¿Qué herramientas utilizas para llevar un registro de accesos?
+8.  ¿Cuánto tiempo inviertes en gestionar o supervisar estos accesos?
+9.  ¿Qué características considerarías esenciales en un sistema de control de accesos?
+10. ¿Estarías dispuesto a pagar por una solución que automatice este proceso? ¿Por qué?
+11. ¿Qué nivel de confianza te generaría un sistema basado en la nube?
+12. ¿Qué tan importante es para ti recibir alertas automáticas ante accesos sospechosos?
+13. ¿Qué tan fácil debería ser implementar una solución como esta en tu negocio?
+14. ¿Prefieres una solución sin hardware inicial (solo software)? ¿Por qué?
+15. ¿Qué te haría decidirte por usar una plataforma como SmartLock?
+
+---
+
+#### Segmento 2: Organizadores de eventos
+
+> **Objetivo:** Explorar cómo gestionan accesos en eventos, identificar dificultades operativas y validar oportunidades de mejora mediante tecnología.
+
+**Cuestionario de validación:**
+
+1.  ¿Cómo gestionas el ingreso de personas en los eventos que organizas?
+2.  ¿Qué problemas has enfrentado al controlar accesos en eventos?
+3.  ¿Cómo verificas la identidad o autorización de los asistentes?
+4.  ¿Qué tan frecuente es que ocurran errores o accesos no autorizados?
+5.  ¿Utilizas herramientas digitales para el control de ingreso? ¿Cuáles?
+6.  ¿Qué tan importante es para ti tener un registro de asistencia en tiempo real?
+7.  ¿Cómo manejas cambios de último momento en listas de invitados?
+8.  ¿Qué tan complicado es coordinar el acceso con tu equipo de trabajo?
+9.  ¿Has tenido problemas con sobreaforo o control de capacidad?
+10. ¿Qué funcionalidades te gustaría tener en un sistema de control de accesos para eventos?
+11. ¿Qué tan útil sería recibir alertas en tiempo real durante un evento?
+12. ¿Estarías dispuesto a usar una plataforma web para gestionar accesos? ¿Por qué?
+13. ¿Qué tan importante es la rapidez en el proceso de ingreso de asistentes?
+14. ¿Qué te preocupa más: seguridad, rapidez o experiencia del usuario?
+15. ¿Qué mejoras implementarías en tu proceso actual de control de accesos?
 
 ### 2.2.2 Registro de entrevistas
 
