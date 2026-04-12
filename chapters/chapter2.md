@@ -95,6 +95,35 @@ Es una solución global de gestión de accesos de nivel empresarial que centrali
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 
+### 2.1.2. Estrategias y tácticas frente a competidores
+
+Para asegurar el posicionamiento y la viabilidad de SmartLock en el mercado frente a soluciones robustas y establecidas, se ha definido un plan de acción enfocado en explotar nuestro modelo Asset-Light (SaaS) y capitalizar las barreras de entrada (altos costos y complejidad) que presentan los competidores actuales.
+
+#### **A. Estrategia Principal: Diferenciación por Agilidad y Costo (Modelo OPEX vs. CAPEX)**
+
+La estrategia central de SmartLock es cambiar el paradigma de la seguridad física tradicional. Mientras que los competidores obligan al cliente a realizar grandes inversiones iniciales en activos físicos (CAPEX), SmartLock ofrece un modelo de gastos operativos (OPEX) mediante suscripción. Esto permite a las empresas y productoras de eventos adoptar tecnología de punta sin descapitalizarse.
+
+#### **B. Tácticas Directas por Competidor**
+
+**1. Frente a Kisi (Competidor Cloud / Hardware Propietario)**
+* **Táctica de "Fricción Cero":** Kisi requiere la compra e instalación de sus propios controladores en las puertas. SmartLock atacará este punto de dolor ofreciendo una implementación 100% digital e inmediata.
+* **Mensaje clave:** "Seguridad empresarial sin tocar una sola puerta". Nos enfocaremos en startups y espacios de coworking que alquilan oficinas y no tienen permiso (o presupuesto) para modificar la infraestructura del edificio.
+
+**2. Frente a Acceso Total Perú (Competidor Local / Hardware Físico)**
+* **Táctica de Flexibilidad y Casos de Uso Temporales:** Acceso Total domina el sector institucional con torniquetes y biometría, lo cual es inamovible. SmartLock se enfocará en un nicho que ellos no pueden atender con agilidad: eventos temporales y PYMES.
+* **Mensaje clave:** En lugar de vender fierros y mantenimientos costosos, venderemos "accesos dinámicos". Si un cliente necesita controlar un evento de fin de semana, SmartLock se despliega en minutos mediante códigos QR, algo imposible de lograr instalando barreras físicas.
+
+**3. Frente a Kronos por SEIDOR (Competidor Enterprise / Workforce Management)**
+* **Táctica de "Plug & Play" y Curva de Aprendizaje Plana:** Kronos es extremadamente potente pero requiere meses de consultoría y capacitaciones complejas. SmartLock se posicionará como la alternativa intuitiva.
+* **Mensaje clave:** Ofreceremos paneles de administración minimalistas y reportes estadísticos directos. El objetivo es que cualquier administrador de recursos humanos o gestor de eventos pueda usar la plataforma desde el día uno, sin necesidad de manuales extensos.
+
+#### **C. Tácticas de Mitigación (Defensa ante Debilidades y Amenazas)**
+
+Para proteger nuestra propuesta de valor ante las vulnerabilidades identificadas en el análisis FODA, se implementarán las siguientes tácticas técnicas y comerciales:
+
+* **Mitigación de la dependencia del Smartphone (Batería/Conectividad):** A nivel de arquitectura de software, la aplicación móvil de SmartLock deberá incorporar una función de "Caché Offline" o generación de códigos QR temporales que no requieran conexión a internet en el momento exacto de la validación, agilizando el flujo en zonas de baja cobertura.
+* **Defensa contra Gigantes Tecnológicos:** Para evitar ser desplazados por funciones nativas de Google o Microsoft, SmartLock no solo será un "generador de accesos", sino que integrará verticalmente herramientas de nicho, como la gestión de aforos en tiempo real para eventos y reportes estadísticos de permanencia, creando un valor agregado que una suite de ofimática genérica no posee.
+
 ## 2.2 Entrevistas
 
 ### 2.2.1 Diseño de entrevistas
