@@ -27,7 +27,7 @@
 | Palacios Tinoco Adrian Fernando | u202410817 |
 | Peñaranda Caldas Gabriel Augusto| u202210836 |
 | Huaman Oscco Aldo Jesus         | u20231h067 |
-|                                 |            |
+| Ayllon Pauccar Juan David       | u20241a860 |
 |                                 |            |
 
 </div>
