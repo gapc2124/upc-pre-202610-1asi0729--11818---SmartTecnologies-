@@ -228,8 +228,6 @@ En esta sección se consolidan las entrevistas realizadas para la validación de
 
 ### 2.2.3 Análisis de entrevistas
 
-### 2.2.3 Análisis de entrevistas
-
 A continuación, se presenta un análisis detallado de cada una de las sesiones de validación. En este apartado se describen los comportamientos detectados, los puntos de dolor específicos y la recepción de la propuesta de valor de SmartLock por parte de cada entrevistado.
 
 #### Segmento: Organizadores de Eventos
