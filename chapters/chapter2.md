@@ -215,6 +215,15 @@ El objetivo de estas entrevistas es comprender sus necesidades, problemas actual
 
 ### 2.2.2 Registro de entrevistas
 
+En esta sección se consolidan las entrevistas realizadas para la validación de la propuesta de valor. Cada sesión ha sido documentada para asegurar la trazabilidad de los hallazgos.
+
+| Nombre del Entrevistado | Segmento | Enlace de la Entrevista (Drive) |
+| :--- | :--- | :--- |
+| [Nombre del Entrevistado] | Empresario | [Enlace al video](URL_AQUÍ) |
+| [Nombre del Entrevistado] | Organizador de Eventos | [Enlace al video](URL_AQUÍ) |
+| [Nombre del Entrevistado] | Empresario | [Enlace al video](URL_AQUÍ) |
+| [Nombre del Entrevistado] | Organizador de Eventos | [Enlace al video](URL_AQUÍ) |
+
 ### 2.2.3 Análisis de entrevistas
 
 ## 2.3 Needfinding
