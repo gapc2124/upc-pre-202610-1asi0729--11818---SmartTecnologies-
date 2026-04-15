@@ -503,6 +503,20 @@ El objetivo de estas entrevistas es comprender sus necesidades, problemas actual
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines.
+Se describen las directrices que aseguran la uniformidad 
+estética del proyecto.<br>
+
+**Colors:**
+<br>
+  Elegimos una paleta que grite **seguridad y tecnología**, pero sin cansar la vista (pensando en administradores que estarán pegados al dashboard monitoreando accesos).
+<br>
+* **Azul Oscuro (#1B263B):** Es nuestro color estrella. Da esa seriedad y confianza que necesitas cuando hablas de controlar quién entra a tu edificio u oficina.
+* **Casi Negro (#0D1B2A):** Lo usamos para los textos importantes. No es negro puro porque eso agota la vista en sesiones largas, pero tiene el peso suficiente para que se lea claro.
+* **Gris Neutro (#E0E1DD):** Este va de fondo en las secciones. Es limpio y hace que los demás elementos resalten sin esfuerzo.
+* **Azul Eléctrico (#3E92CC):** Este es nuestro "call to action". Si hay algo que el usuario tiene que clickear sí o sí (como el botón de "Abrir Puerta" o "Guardar Configuración"), va en este color.
+
+<img src="Resources/Style%20Guidelines/Paleta-de-colores/Paleta-de-colores.PNG">
+
 ### 4.1.1. General Style Guidelines.
 ### 4.1.2. Web Style Guidelines.
 ## 4.2. Information Architecture.
