@@ -219,12 +219,48 @@ En esta sección se consolidan las entrevistas realizadas para la validación de
 
 | Nombre del Entrevistado | Segmento | Enlace de la Entrevista (Drive) |
 | :--- | :--- | :--- |
-| [Nombre del Entrevistado] | Empresario | [Enlace al video](URL_AQUÍ) |
-| [Nombre del Entrevistado] | Organizador de Eventos | [Enlace al video](URL_AQUÍ) |
-| [Nombre del Entrevistado] | Empresario | [Enlace al video](URL_AQUÍ) |
-| [Nombre del Entrevistado] | Organizador de Eventos | [Enlace al video](URL_AQUÍ) |
+| Almendra Lucía Lavi Cuyubamba | Organizador de eventos | [Enlace al drive](https://drive.google.com/drive/folders/1Uhej5HwTiy1H02ks4PsJ1ypoxCMtlsuX?usp=sharing) |
+| Evelyn Jannet Caldas Párraga | Organizador de Eventos | [Enlace al video](https://drive.google.com/drive/folders/1JFUE4UwyJyrbLREk2UrAOmn6ZuhBJyHT?usp=sharing) |
+| Josue Nolasco | Organizador de eventos | [Enlace al video](https://drive.google.com/drive/folders/1Z8a_31JU139vRjelw6E6odRUEEG1zb4N?usp=sharing) |
+| Anthony Nolasco | Empresario | [Enlace al video](https://drive.google.com/drive/folders/1BYn2a5jxz758K4LYA9w57gxhZQiKlB_P?usp=sharing) |
+| Monica Moreno Olivera | Empresario | [Enlace al video](https://drive.google.com/drive/folders/1xa4zk88iqrlRpYc5PhleA7pgUyJ_iNaL?usp=sharing) |
+| Hugo Ricardo Rojas | Empresario | [Enlace al video](https://drive.google.com/drive/folders/1wupFFeJ_Gso7lkt-E98uMOC2pvaAPjVk?usp=sharing) |
 
 ### 2.2.3 Análisis de entrevistas
+
+### 2.2.3 Análisis de entrevistas
+
+A continuación, se presenta un análisis detallado de cada una de las sesiones de validación. En este apartado se describen los comportamientos detectados, los puntos de dolor específicos y la recepción de la propuesta de valor de SmartLock por parte de cada entrevistado.
+
+#### Segmento: Organizadores de Eventos
+
+**1. Almendra Lucía Lavi Cuyubamba**
+de 21 años, es estudiante de la carrera de Marketing y organizadora de eventos coorporativos en la empresa llamada Okawa. Almendra Suele organizar sus eventos llevando un conteo de registros en formularios tipo google forms, donde las personas que asistirán al evento se registran. Sin embargo no tiene una manera de asegurarse que la persona registrada es alguien que tiene permiso de ingreso a las oficinas coorporativas. También tiene el problema de que muchas personas se aglomeran cerca a la hora de inicio de la conferencia provocando cierto desorden. Le gustaría que se activen servicios de IA una vez las personas ingresen al area. Le gustaría que mejore la experiencia de usuario. Le parece innovadora la idea de SmartLock y estaría dispuesta a usarlo si los beneficios en seguridad y ahorro de tiempo supera el precio del software. Prefeririá que tenganmos tanto app web como app movil. Lo más interesante de todo para ella es ver el aforo en tiempo real
+
+**2. Evelyn Jannet Caldas Párraga**
+[Escribe aquí el párrafo amplio]
+
+**3. Josue Nolasco**
+[Escribe aquí el párrafo amplio]
+
+---
+
+#### Segmento: Empresarios (Dueños/Administradores)
+
+**4. Anthony Nolasco**
+[Escribe aquí el párrafo amplio]
+
+**5. Monica Moreno Olivera**
+[Escribe aquí el párrafo amplio]
+
+**6. Hugo Ricardo Rojas**
+[Escribe aquí el párrafo amplio]
+
+---
+
+#### Síntesis de hallazgos (Insights principales)
+* **Insight 1:** [Resumen de una verdad descubierta, ej: La movilidad es más importante que el hardware robusto].
+* **Insight 2:** [Resumen de otra verdad, ej: El miedo al acceso de ex-empleados es el dolor principal en empresarios].
 
 ## 2.3 Needfinding
 
