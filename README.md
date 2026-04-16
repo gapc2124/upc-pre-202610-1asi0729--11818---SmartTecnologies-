@@ -506,9 +506,10 @@ El objetivo de estas entrevistas es comprender sus necesidades, problemas actual
 Se describen las directrices que aseguran la uniformidad 
 estética del proyecto.<br>
 
+### 4.1.1. General Style Guidelines.
 **Colors:**
 <br>
-  Elegimos una paleta que grite **seguridad y tecnología**, pero sin cansar la vista (pensando en administradores que estarán pegados al dashboard monitoreando accesos).
+Elegimos una paleta que grite **seguridad y tecnología**, pero sin cansar la vista (pensando en administradores que estarán pegados al dashboard monitoreando accesos).
 <br>
 * **Azul Oscuro (#1B263B):** Es nuestro color estrella. Da esa seriedad y confianza que necesitas cuando hablas de controlar quién entra a tu edificio u oficina.
 * **Casi Negro (#0D1B2A):** Lo usamos para los textos importantes. No es negro puro porque eso agota la vista en sesiones largas, pero tiene el peso suficiente para que se lea claro.
@@ -525,9 +526,43 @@ El logo de **SmartLock** es directo al grano: un **candado**. Elegimos este isot
 
 **Typography** <br>
 Nos fuimos por **Inter**. ¿Por qué? Porque cuando tienes una lista gigante de registros de entrada y salida, necesitas una letra que se lea perfecto en pantallas de cualquier tamaño. Es una fuente *sans-serif* optimizada para entornos digitales.
+* **Bold:** Para los títulos de sección y alertas que no puedes ignorar.
+* **Semi-Bold:** Para encabezados de tablas o nombres de usuarios.
+* **Regular:** Para el cuerpo de texto y los logs de acceso.
+* *Referencia:* [Inter - Google Fonts](https://fonts.google.com/specimen/Inter)
 
-### 4.1.1. General Style Guidelines.
-### 4.1.2. Web Style Guidelines.
+**Spacing**<br>
+Para que no todo esté tirado al azar, usamos la regla de los **8px**. Si vas a separar algo, que sea múltiplo de 8. En el código, **solo usamos `rem`** para que la interfaz sea escalable y se adapte bien si el usuario cambia el tamaño de fuente de su navegador.
+
+| Categoría | Medida (rem / px) | Aplicación en el Diseño |
+| :--- | :--- | :--- |
+| **X-Small** | 0.25 rem / 4 px | Alineación de iconos y micro-ajustes de posición. |
+| **Small** | 0.5 rem / 8 px | Espacio entre un texto y su campo de entrada (input). |
+| **Medium** | 1.0 rem / 16 px | Relleno interno (padding) de botones y tarjetas. |
+| **Large** | 1.5 rem / 24 px | Margen entre componentes de un mismo bloque funcional. |
+| **X-Large** | 2.0 rem / 32 px | Distancia entre contenedores de información independientes. |
+| **Section** | 4.0 rem / 64 px | El espacio grande entre bloques estructurales de la página. |
+
+> **Nota técnica:** Queda prohibido usar píxeles (`px`) estáticos para márgenes o paddings. Todo debe ir en `rem` siguiendo la escala de arriba.
+
+**Dimensions (Tono y Comunicación)**<br>
+El estilo de comunicación de SmartLock es **directo y técnico**. Como ingenieros, no queremos meterle "floro" innecesario al usuario.
+* Si alguien intenta entrar y no tiene permiso, el sistema dice **"Acceso Denegado"**, sin vueltas.
+* Usamos términos que un jefe de seguridad entienda rápido (como "Trazabilidad", "Cifrado" o "Autenticación").
+* La idea es que la plataforma sea una herramienta de trabajo estricta, libre de narrativa irrelevante, para que la toma de decisiones sea rápida.
+
+---
+
+### 4.1.2. Web Style Guidelines
+
+Aquí es donde aterrizamos todo para que la plataforma web se vea de nivel profesional:
+
+1.  **Cero Adornos:** Si un botón o un icono no ayuda a monitorear o gestionar la seguridad, se quita. Queremos una interfaz limpia donde el control sea el protagonista.
+2.  **Todo es Responsive:** El administrador puede estar en su oficina con un monitor gigante o en la entrada con su tablet. La estructura no debe romperse y los elementos deben ser fáciles de tocar/clickear en cualquier dispositivo.
+3.  **Jerarquía Visual:** Usamos el contraste y los colores semánticos para que el ojo sepa qué es urgente.
+  * **Rojo:** Alertar brechas de seguridad o intentos fallidos.
+  * **Verde/Azul:** Accesos válidos y sistema operativo.
+  * **Amarillo:** Dar advertencias ante cualquier problema. 
 ## 4.2. Information Architecture.
 ### 4.2.1. Organization Systems.
 ### 4.2.2. Labeling Systems.
