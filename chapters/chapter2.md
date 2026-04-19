@@ -332,8 +332,26 @@ Al analizar la matriz, se observan coincidencias estratégicas y diferencias ope
 * **Diferencias en Frecuencia:** Para Carlos, la **Elaboración de informes** es una tarea de alta frecuencia debido a la necesidad de control administrativo constante (asistencia), mientras que para Valeria es una tarea de baja frecuencia que solo ocurre al cierre del evento. Por otro lado, la **Supervisión de aforo** es crítica y frecuente para Valeria por razones de seguridad civil, mientras que para Carlos es una tarea secundaria.
 * **Puntos de Dolor Identificados:** La **Eliminación de credenciales** tiene una importancia Alta para Carlos (evitar que un exempleado ingrese), pero su frecuencia es Media. En el caso de Valeria, la **Gestión de permisos temporales** es constante debido a la naturaleza volátil del staff de eventos, lo que representa una carga operativa mayor que la de una oficina tradicional.
 
-### 2.3.3. User Journey Mapping.
+### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los **User Journey Maps (As-Is)** correspondientes a los dos arquetipos de usuarios principales definidos previamente: Carlos Ortega (Gerente de Operaciones) y Valeria Rios (Organizadora de Eventos). 
+
+El objetivo de estos diagramas es ilustrar el *end-to-end journey* de la situación actual que enfrentan ambos perfiles al intentar gestionar la seguridad y el control de accesos **sin contar con una solución tecnológica centralizada como SmartLock**. Se evidencia el proceso tradicional, desde el descubrimiento de la necesidad operativa, pasando por la gestión manual mediante el uso de llaves físicas o listas impresas, hasta las tareas de auditoría post-ingreso. 
+
+A través de estos mapas, se identifican claramente los puntos de fricción (pain points), las frustraciones y las caídas en la experiencia del usuario, justificando así la necesidad de desarrollar nuestra propuesta de valor digital. Cada mapa está directamente vinculado a su ficha de *User Persona* desarrollada en la plataforma UXPressia.
+
+#### A. User Journey Map: Carlos Ortega (Segmento Corporativo)
+Este mapa detalla la experiencia diaria de Carlos, quien actualmente depende de un sistema obsoleto basado en llaves físicas, registros manuales en cuadernos de portería y reportes poco fiables. Se ilustra la frustración frente a la pérdida de llaves y la falta de visibilidad en tiempo real sobre el flujo de sus empleados.
+
+![Customer Journey Map - Carlos Ortega](/docs/Customer%20Carlos.png)
+
+#### B. User Journey Map: Valeria Rios (Segmento de Eventos)
+Este mapa ilustra el proceso acelerado y estresante de Valeria durante la organización y ejecución de un evento. Se muestra su recorrido "As-Is", donde la gestión de invitados se realiza mediante listas de Excel impresas, generando lentitud en la validación de identidades, largas colas en la puerta y vulnerabilidad ante falsificaciones.
+
+![Customer Journey Map - Valeria Rios](/docs/Customer%20Valeria.png)
+
 ### 2.3.4. Empathy Mapping.
+
 ### 2.3.5. As-is Scenario Mapping.
 
 ## 2.4. Big Picture Event Storming.
