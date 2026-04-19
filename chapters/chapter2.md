@@ -305,6 +305,33 @@ Valeria representa el segmento dinámico de SmartLock. Su necesidad no es la per
 
 
 ### 2.3.2. User Task Matrix.
+En esta sección se presenta el **User Task Matrix**, una herramienta que permite mapear las actividades críticas que nuestros arquetipos realizan para alcanzar sus objetivos de seguridad y gestión. Este artefacto es el resultado directo de la síntesis entre las entrevistas a profundidad y el análisis de la competencia, permitiéndonos identificar qué procesos son rutinarios y cuáles son vitales para el éxito de la operación.
+
+Para este análisis, consideramos a nuestros dos segmentos objetivo representados por:
+* **Carlos Ortega:** Gerente de Operaciones (Segmento Corporativo/Oficinas).
+* **Valeria Rios:** Organizadora de Eventos (Segmento de Espacios de Alto Tráfico).
+
+A continuación, se detallan las tareas identificadas, evaluando su **Frecuencia (F)** y su **Importancia (I)** en una escala de Bajo, Medio y Alto.
+
+| Tareas (Tasks) | Carlos: Frecuencia | Carlos: Importancia | Valeria: Frecuencia | Valeria: Importancia |
+| :--- | :---: | :---: | :---: | :---: |
+| Registro de entrada y salida del personal/asistentes | Alta | Alta | Alta | Alta |
+| Verificación de identidad en puntos de control | Alta | Alta | Alta | Alta |
+| Gestión y entrega de credenciales físicas (llaves, carnets) | Media | Media | Baja | Media |
+| Supervisión de la capacidad máxima de los recintos (aforo) | Baja | Media | Alta | Alta |
+| Gestión de permisos para visitas o contratistas externos | Media | Alta | Alta | Alta |
+| Elaboración de informes de permanencia y puntualidad | Alta | Alta | Baja | Media |
+| Eliminación de credenciales de personal que ya no labora | Media | Alta | Baja | Media |
+| Respuesta ante intentos de ingreso no autorizados | Baja | Alta | Media | Alta |
+
+### **Explicación del Cuadro**
+
+Al analizar la matriz, se observan coincidencias estratégicas y diferencias operativas marcadas por la naturaleza de cada segmento:
+
+* **Tareas Críticas (Coincidencias):** El **Registro de entrada/salida** y la **Verificación de identidad** son las tareas con mayor frecuencia e importancia para ambos. Esto valida que el núcleo de *SmartLock* debe ser la rapidez y la seguridad en estos puntos de fricción.
+* **Diferencias en Frecuencia:** Para Carlos, la **Elaboración de informes** es una tarea de alta frecuencia debido a la necesidad de control administrativo constante (asistencia), mientras que para Valeria es una tarea de baja frecuencia que solo ocurre al cierre del evento. Por otro lado, la **Supervisión de aforo** es crítica y frecuente para Valeria por razones de seguridad civil, mientras que para Carlos es una tarea secundaria.
+* **Puntos de Dolor Identificados:** La **Eliminación de credenciales** tiene una importancia Alta para Carlos (evitar que un exempleado ingrese), pero su frecuencia es Media. En el caso de Valeria, la **Gestión de permisos temporales** es constante debido a la naturaleza volátil del staff de eventos, lo que representa una carga operativa mayor que la de una oficina tradicional.
+
 ### 2.3.3. User Journey Mapping.
 ### 2.3.4. Empathy Mapping.
 ### 2.3.5. As-is Scenario Mapping.
