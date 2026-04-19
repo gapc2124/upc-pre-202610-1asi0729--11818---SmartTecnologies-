@@ -251,8 +251,8 @@ tiene 48 años, graduada como administradora de empresas es secretaria y organiz
 **5. Monica Moreno Olivera**
 [Escribe aquí el párrafo amplio]
 
-**6. Hugo Ricardo Rojas**
-[Escribe aquí el párrafo amplio]
+**6. Hugo Ricardo Rojas Párraga**
+tiene 35, es ingeniero ambiental y gerente de su empresa llamada Gestam Consulting donde se realizan gestiones ambientales a empresas que contraten sus servicios. Hugo ha experimentado problemas con el manejo del acceso a sus oficinas, ya que todo el control lo hace en hojas físicas a mano lo que provoca cierto retraso. Ha tenido malas experiencias donde exempleados ingresan a las instalaciones como lo hacían antes y no desea que eso vuelva a ocurrir. También le gustaría implementar smartlock pagando una membresía económica pero sin adquirir ningún tipo de hardware físico más que los dispositivos móviles. Hugo considera que sería sencillo implementar SmartLock en sus oficinas. Hugo también considera que lo más importante para él son los reportes de asistencia periodicos.
 
 ---
 
@@ -262,7 +262,48 @@ tiene 48 años, graduada como administradora de empresas es secretaria y organiz
 
 ## 2.3 Needfinding
 
-### 2.3.1. User Personas.
+### 2.3. User Personas
+
+En esta sección se presentan las fichas de **User Persona** desarrolladas para los dos segmentos clave de **SmartLock**. La creación de estos arquetipos no es arbitraria; surge directamente del análisis de las entrevistas realizadas y del estudio de la competencia (Kisi, Acceso Total y Kronos). 
+
+De las entrevistas, identificamos que la principal fricción es la **dependencia de registros manuales y hardware costoso**, lo que nos llevó a priorizar la agilidad y la movilidad en nuestros perfiles. Del análisis competitivo, detectamos un vacío en soluciones **"Asset-Light"** para PYMES y eventos, lo que define las metas de nuestros personajes: eficiencia sin inversión pesada en infraestructura.
+
+Para la elaboración de estos artefactos, se utilizó la herramienta **UXPressia**, asegurando que cada ficha incluya dimensiones demográficas, psicográficas, metas, frustraciones y el entorno tecnológico del usuario.
+
+---
+
+#### 2.3.1. Segmento 1: Gerentes de Operaciones y TI
+
+##### **Carlos Ortega - "El Protector Eficiente"**
+
+Carlos representa nuestro segmento B2B corporativo. Es el tomador de decisiones que busca transformar la seguridad de su edificio en un activo estratégico basado en datos y no solo en llaves físicas.
+
+![User Persona - Carlos Ortega](/docs/Carlos%20Ortega.png)
+
+**Resumen del Perfil:**
+* **Relación con el problema:** Sufre por la falta de trazabilidad en los accesos de su edificio de oficinas. Su mayor temor es una brecha de seguridad que no pueda auditar.
+* **Características Clave:** * **Metas:** Centralizar el control de múltiples sedes y automatizar reportes de asistencia para RRHH.
+    * **Frustraciones:** El costo de reposición de tarjetas/llaves y la lentitud de los procesos manuales.
+    * **Tecnología:** Usuario avanzado de herramientas SaaS y monitoreo móvil constante.
+
+---
+
+#### 2.3.2. Segmento 2: Organizadores de Eventos y Espacios de Alto Tráfico
+
+##### **Valeria Rios - "La Productora Perfeccionista"**
+
+Valeria representa el segmento dinámico de SmartLock. Su necesidad no es la permanencia, sino la velocidad y la seguridad temporal masiva durante picos de tráfico.
+
+![User Persona - Valeria Rios](/docs/Valeria%20Rios.png)
+
+**Resumen del Perfil:**
+* **Relación con el problema:** El caos en el ingreso es su mayor enemigo. Necesita un sistema que sea fácil de desplegar (sin hardware pesado) y que garantice que nadie use entradas falsificadas.
+* **Características Clave:**
+    * **Metas:** Fluidez total en el ingreso masivo y control de aforo en tiempo real por seguridad.
+    * **Frustraciones:** Listas de invitados desactualizadas y el fraude con capturas de pantalla de códigos QR estáticos.
+    * **Tecnología:** Mobile-first extremo; depende de su smartphone y la nube para coordinar a su staff en terreno.
+
+
 ### 2.3.2. User Task Matrix.
 ### 2.3.3. User Journey Mapping.
 ### 2.3.4. Empathy Mapping.
