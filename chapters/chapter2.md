@@ -356,3 +356,67 @@ Este mapa ilustra el proceso acelerado y estresante de Valeria durante la organi
 
 ## 2.4. Big Picture Event Storming.
 ## 2.5. Ubiquitous Language
+
+## Identity & Auth
+
+TERMS:
+- Subscription: Platform tenant subscription
+- System User: Admin/Operator/Auditor who accesses the web platform
+- Authentication: Verifying user identity (login + 2FA)
+- Role: Permission level (Super Admin, Admin, Operator, Auditor)
+- 2FA: Two-factor authentication
+- Quota: Usage limits (users, subscription limits)
+- Billing Cycle: Recurring payment period
+- Quota Warning: Alert when reaching usage limits
+- User Lock: Account lockout after failed attempts
+
+---
+
+## Physical Space
+
+TERMS:
+- Location: Physical site/office where doors are installed
+- Door: Physical entry point with access control
+- Access Mode: How door grants access (card, biometric, PIN, etc.)
+- Door Status: Current state of door (open, closed, locked)
+- Maintenance: Updates/repairs to doors
+
+---
+
+## Access Control
+
+TERMS:
+- Access User: Person who passes through physical doors
+- Access Policy: Set of rules defining who can access
+- Schedule: Time windows for access (workdays, hours)
+- Holiday Schedule: Special dates with different access rules
+- Policy Assignment: Linking policy to doors/users
+- Access Attempt: Any attempt to enter through a door
+- Access Grant: Successful access
+- Access Denial: Failed access attempt
+
+---
+
+## Security
+
+TERMS:
+- Security Alert: Notification of suspicious/unsafe activity
+- Access Denial Reason: Why access was denied (invalid credentials, out of schedule, policy violation)
+- Repeated Failed Attempts: Multiple failed access attempts
+- Unauthorized Access: Access by unauthorized person
+- Suspicious Behavior: Activity that violates normal patterns
+- Emergency Override: Bypass all security to unlock doors
+- Alert Acknowledgment: Operator confirms alert
+- Alert Resolution: Alert issue resolved
+
+---
+
+## Billing
+
+TERMS:
+- Subscription Plan: Paid tier (FREE, PROFESSIONAL, ENTERPRISE)
+- Subscription Upgrade/Downgrade: Plan level changes
+- Payment Failure: Failed billing transaction
+- Billing Renewal: Automatic recurring payment
+- History Archive: Storing old access logs
+- Deactivation: Disabling user/location access
