@@ -68,7 +68,7 @@ Es una solución global de gestión de accesos de nivel empresarial que centrali
 
 ### 2.1.1 Análisis Competitivo
 
-# Competitive Analysis Landscape
+## Competitive Analysis Landscape
 
 <div align="justify">
 
@@ -76,7 +76,7 @@ Es una solución global de gestión de accesos de nivel empresarial que centrali
 > 
 > **Objetivo:** [El objetivo de nuestro equipo es que los clientes vean nuestro software como una aplicación viable para la gestión de accesos de sus eventos o empresas, pudiendo ver reportes de asistencias, tardanzas e identificación de usuarios. Asimismo, facilitar la visualización de reportes que permitan analizar estadísticamente a sus colaboradores.]
 
-| Sección | Detalle | SmartLock <br><img src="../Resources/Companies/SmartLock.png" alt="SmartLock" width="100"/> | Kisi <br><img src="../Resources/Companies/Kisi.png" alt="kisi" width="100"/> | Acceso total Peru <br><img src="../Resources/Companies/Atp.png" alt="Acceso-total-peru" width="100"/> | Kronos por Seidor <br><img src="../Resources/Companies/Seidor.jpg" alt="Kronos" width="100"/> |
+| Sección | Detalle | SmartLock <br><img src="Resources/Companies/SmartLock.png" alt="SmartLock" width="100"/> | Kisi <br><img src="Resources/Companies/Kisi.png" alt="kisi" width="100"/> | Acceso total Peru <br><img src="Resources/Companies/Atp.png" alt="Acceso-total-peru" width="100"/> | Kronos por Seidor <br><img src="Resources/Companies/Seidor.jpg" alt="Kronos" width="100"/> |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Perfil** | Overview | [Es un modelo de gestión de accesos "Asset-Light" que utiliza códigos QR dinámicos para eliminar la inversión en hardware, orientado a empresas y eventos que buscan una implementación inmediata, económica y escalable.] | [Es una solución de seguridad física basada en la nube que unifica el control de múltiples sedes globales en una sola interfaz, optimizando los costos de instalación al integrar infraestructura antigua con protocolos modernos de identidad (SSO/SCIM).] | [Se especializa en la integración de hardware y soporte técnico local, ofreciendo sistemas de barreras físicas y biometría para instituciones que requieren una fiscalización presencial estricta y cumplimiento de normativas nacionales.] | [Es una plataforma de Workforce Management estratégica enfocada en grandes corporaciones, cuyo objetivo es maximizar la rentabilidad del capital humano mediante la automatización de horarios complejos y el control de costos laborales.] |
 | | Ventaja competitiva (¿Qué valor ofrece?) | [Optimiza la gestión de identidades mediante un modelo SaaS basado en códigos QR dinámicos, eliminando la dependencia de hardware costoso para ofrecer una solución ágil y de bajo costo en accesos corporativos y eventos temporales.] | [Se posiciona como una solución de control de accesos en la nube de nivel empresarial, cuyo objetivo es modernizar infraestructuras físicas antiguas integrándolas con sistemas de identidad avanzados como SSO y SCIM.] | [Se especializa en la integración de hardware y automatización local, enfocándose en la instalación de barreras físicas y sistemas biométricos para instituciones que requieren un control presencial robusto en el mercado peruano.] | [Ofrece una plataforma estratégica de Workforce Management, diseñada para grandes corporaciones que buscan maximizar la productividad y garantizar el cumplimiento legal mediante la gestión compleja de turnos y planillas.] |
@@ -184,34 +184,68 @@ Es una solución global de gestión de accesos de nivel empresarial que centrali
 
 </div>
 
-### 2.1.2. Estrategias y tácticas frente a competidores
+### **Kisi (Control de Acceso en la Nube)** 
+Es una solución global de gestión de accesos de nivel empresarial que centraliza el control de múltiples instalaciones en una única interfaz basada en la nube. Se especializa en modernizar infraestructuras existentes sin necesidad de reemplazarlas por completo.
+<https://www.getkisi.com/enterprise>
 
-Para asegurar el posicionamiento y la viabilidad de SmartLock en el mercado frente a soluciones robustas y establecidas, se ha definido un plan de acción enfocado en explotar nuestro modelo Asset-Light (SaaS) y capitalizar las barreras de entrada (altos costos y complejidad) que presentan los competidores actuales.
+##### **Características Principales**
+* **Gestión de Identidad Avanzada:** Permite asignar privilegios detallados por usuario e integra sistemas de autenticación **SSO** y protocolos **SCIM** para sincronizar la base de datos de empleados automáticamente.
+* **Seguridad y Auditoría:** Facilita el cumplimiento de normativas de seguridad física mediante la obtención de datos vía **API** y la generación de informes automáticos personalizados.
+* **Seguridad Multicapa:** Ofrece opciones de autenticación de dos factores (**2FA**) y **WebAuthn** para elevar los estándares de protección.
+* **Implementación Híbrida:** Su gran diferencial es la capacidad de conectarse a cerraduras y lectores ya instalados, lo que reduce los costos de implementación hasta en un **65%**.
 
-#### **A. Estrategia Principal: Diferenciación por Agilidad y Costo (Modelo OPEX vs. CAPEX)**
+##### **Estructura de Planes**
 
-La estrategia central de SmartLock es cambiar el paradigma de la seguridad física tradicional. Mientras que los competidores obligan al cliente a realizar grandes inversiones iniciales en activos físicos (CAPEX), SmartLock ofrece un modelo de gastos operativos (OPEX) mediante suscripción. Esto permite a las empresas y productoras de eventos adoptar tecnología de punta sin descapitalizarse.
+| Plan | Descripción / Enfoque | Ideal para |
+| :--- | :--- | :--- |
+| **Standard** | Control básico en la nube. | Oficinas pequeñas. |
+| **CRM** | Integración con sistemas de gestión de clientes. | Negocios con membresías. |
+| **Enterprise** | Auditorías estrictas e integraciones de IT avanzadas. | Grandes corporaciones. |
 
-#### **B. Tácticas Directas por Competidor**
+---
+<https://pages.getkisi.com/hubfs/kisi-pricing-overview.pdf>
+<br></br>
 
-**1. Frente a Kisi (Competidor Cloud / Hardware Propietario)**
-* **Táctica de "Fricción Cero":** Kisi requiere la compra e instalación de sus propios controladores en las puertas. SmartLock atacará este punto de dolor ofreciendo una implementación 100% digital e inmediata.
-* **Mensaje clave:** "Seguridad empresarial sin tocar una sola puerta". Nos enfocaremos en startups y espacios de coworking que alquilan oficinas y no tienen permiso (o presupuesto) para modificar la infraestructura del edificio.
+### **Acceso Total Perú (Soluciones Integrales de Automatización)**
+**Perfil de la Empresa:** Empresa peruana en fase de expansión con más de 5 años de experiencia en el sector de seguridad inteligente. Su competitividad radica en la flexibilidad de hardware y una sólida trayectoria con instituciones públicas y privadas de alto perfil (MININTER, MINCETUR, UNI, entre otros).
 
-**2. Frente a Acceso Total Perú (Competidor Local / Hardware Físico)**
-* **Táctica de Flexibilidad y Casos de Uso Temporales:** Acceso Total domina el sector institucional con torniquetes y biometría, lo cual es inamovible. SmartLock se enfocará en un nicho que ellos no pueden atender con agilidad: eventos temporales y PYMES.
-* **Mensaje clave:** En lugar de vender fierros y mantenimientos costosos, venderemos "accesos dinámicos". Si un cliente necesita controlar un evento de fin de semana, SmartLock se despliega en minutos mediante códigos QR, algo imposible de lograr instalando barreras físicas.
+##### **Líneas de Servicio y Planes**
+* **Control de Acceso para Puertas:** Sistema versátil con soporte para múltiples métodos de validación: códigos, tarjetas, huellas biométricas, reconocimiento facial y **códigos QR**.
+* **Gestión de Asistencia Biométrica:** Solución especializada para **Recursos Humanos** que permite el control detallado de asistencias, faltas y horas extras con gestión local o centralizada.
+* **Control de Acceso Vehicular:** Automatización de entradas y salidas de vehículos enfocada en la eficiencia operativa y reducción de costos de personal.
+* **Control Peatonal Centralizado:** Implementación de barreras físicas (**torniquetes o molinetes**) gestionadas por un software integrado e intuitivo para flujos masivos.
 
-**3. Frente a Kronos por SEIDOR (Competidor Enterprise / Workforce Management)**
-* **Táctica de "Plug & Play" y Curva de Aprendizaje Plana:** Kronos es extremadamente potente pero requiere meses de consultoría y capacitaciones complejas. SmartLock se posicionará como la alternativa intuitiva.
-* **Mensaje clave:** Ofreceremos paneles de administración minimalistas y reportes estadísticos directos. El objetivo es que cualquier administrador de recursos humanos o gestor de eventos pueda usar la plataforma desde el día uno, sin necesidad de manuales extensos.
+##### **Valor Agregado**
 
-#### **C. Tácticas de Mitigación (Defensa ante Debilidades y Amenazas)**
+| Beneficio | Descripción |
+| :--- | :--- |
+| **Asesoría Personalizada** | Acompañamiento técnico previo para determinar la viabilidad según la infraestructura. |
+| **Experiencia Local** | Conocimiento profundo del mercado peruano y cumplimiento de estándares para entidades estatales. |
 
-Para proteger nuestra propuesta de valor ante las vulnerabilidades identificadas en el análisis FODA, se implementarán las siguientes tácticas técnicas y comerciales:
+---
+<https://accesototalperu.com/control-de-acceso-puerta/>
+<br></br>
 
-* **Mitigación de la dependencia del Smartphone (Batería/Conectividad):** A nivel de arquitectura de software, la aplicación móvil de SmartLock deberá incorporar una función de "Caché Offline" o generación de códigos QR temporales que no requieran conexión a internet en el momento exacto de la validación, agilizando el flujo en zonas de baja cobertura.
-* **Defensa contra Gigantes Tecnológicos:** Para evitar ser desplazados por funciones nativas de Google o Microsoft, SmartLock no solo será un "generador de accesos", sino que integrará verticalmente herramientas de nicho, como la gestión de aforos en tiempo real para eventos y reportes estadísticos de permanencia, creando un valor agregado que una suite de ofimática genérica no posee.
+### **Kronos por SEIDOR (Gestión de Fuerza Laboral y Tiempo)**
+**Descripción General:** Solución de alto nivel distribuida por **SEIDOR**, diseñada para el control integral de la jornada laboral y la optimización de la productividad. Su enfoque principal es el cumplimiento normativo y la eficiencia operativa en empresas con grandes planillas y turnos complejos.
+
+#### **Pilares Estratégicos**
+* **Optimización de Costos Operativos:** Alinea el personal con la demanda del negocio. Controla el pago de **horas extras** y proyecta el gasto de horas-hombre en tiempo real mediante alertas automáticas.
+* **Mitigación de Riesgos y Cumplimiento:** Automatiza la generación de horarios asegurando el cumplimiento de la **legislación laboral** y acuerdos sindicales. Valida que el personal cuente con certificaciones vigentes antes de asignar turnos.
+* **Productividad y Rendimiento:** Gestiona descansos obligatorios para prevenir el agotamiento y facilita la creación de equipos basados en competencias específicas.
+* **Experiencia del Empleado (Self-Service):** Interfaz intuitiva para dispositivos móviles (**iOS y Android**) que permite a los colaboradores gestionar su disponibilidad y preferencias de turnos.
+
+#### **Resumen de Valor**
+
+| Enfoque | Objetivo Principal |
+| :--- | :--- |
+| **Financiero** | Control de presupuestos y reducción de sobrecostos laborales. |
+| **Legal** | Automatización del cumplimiento de normativas vigentes. |
+| **Humano** | Autogestión y bienestar del colaborador mediante movilidad. |
+
+---
+<https://www.seidor.com/es-pe/kronos>
+<br></br>
 
 ## 2.2 Entrevistas
 
@@ -271,17 +305,147 @@ El objetivo de estas entrevistas es comprender sus necesidades, problemas actual
 
 ### 2.2.2 Registro de entrevistas
 
+En esta sección se consolidan las entrevistas realizadas para la validación de la propuesta de valor. Cada sesión ha sido documentada para asegurar la trazabilidad de los hallazgos.
+
+| Nombre del Entrevistado | Segmento | Enlace de la Entrevista (Drive) |
+| :--- | :--- | :--- |
+| Almendra Lucía Lavi Cuyubamba | Organizador de eventos | [Enlace al drive](https://drive.google.com/drive/folders/1Uhej5HwTiy1H02ks4PsJ1ypoxCMtlsuX?usp=sharing) |
+| Evelyn Jannet Caldas Párraga | Organizador de Eventos | [Enlace al video](https://drive.google.com/drive/folders/1JFUE4UwyJyrbLREk2UrAOmn6ZuhBJyHT?usp=sharing) |
+| Josue Nolasco | Organizador de eventos | [Enlace al video](https://drive.google.com/drive/folders/1Z8a_31JU139vRjelw6E6odRUEEG1zb4N?usp=sharing) |
+| Anthony Nolasco | Empresario | [Enlace al video](https://drive.google.com/drive/folders/1BYn2a5jxz758K4LYA9w57gxhZQiKlB_P?usp=sharing) |
+| Monica Moreno Olivera | Empresario | [Enlace al video](https://drive.google.com/drive/folders/1xa4zk88iqrlRpYc5PhleA7pgUyJ_iNaL?usp=sharing) |
+| Hugo Ricardo Rojas | Empresario | [Enlace al video](https://drive.google.com/drive/folders/1wupFFeJ_Gso7lkt-E98uMOC2pvaAPjVk?usp=sharing) |
+
 ### 2.2.3 Análisis de entrevistas
+
+A continuación, se presenta un análisis detallado de cada una de las sesiones de validación. En este apartado se describen los comportamientos detectados, los puntos de dolor específicos y la recepción de la propuesta de valor de SmartLock por parte de cada entrevistado.
+
+#### Segmento: Organizadores de Eventos
+
+**1. Almendra Lucía Lavi Cuyubamba**
+de 21 años, es estudiante de la carrera de Marketing y organizadora de eventos coorporativos en la empresa llamada Okawa. Almendra Suele organizar sus eventos llevando un conteo de registros en formularios tipo google forms, donde las personas que asistirán al evento se registran. Sin embargo no tiene una manera de asegurarse que la persona registrada es alguien que tiene permiso de ingreso a las oficinas coorporativas. También tiene el problema de que muchas personas se aglomeran cerca a la hora de inicio de la conferencia provocando cierto desorden. Le gustaría que se activen servicios de IA una vez las personas ingresen al area. Le gustaría que mejore la experiencia de usuario. Le parece innovadora la idea de SmartLock y estaría dispuesta a usarlo si los beneficios en seguridad y ahorro de tiempo supera el precio del software. Prefeririá que tenganmos tanto app web como app movil. Lo más interesante de todo para ella es ver el aforo en tiempo real
+
+**2. Evelyn Jannet Caldas Párraga**
+tiene 48 años, graduada como administradora de empresas es secretaria y organizadora de eventos familiares en el colegio Norteamericano Abraham Lincoln. Evelyn gestiona el acceso a eventos institucionales dirigidos exclusivamente a socios y sus familias, utilizando actualmente plataformas como Joinnus para el registro digital y la venta de tickets. Aunque cuenta con procesos definidos, identifica un problema importante en la logística con proveedores: los cambios de último minuto en el personal externo generan demoras operativas, ya que debe asignar personal específicamente para verificaciones manuales. Para la seguridad interna de la empresa, recalca que el control es vital para proteger documentación sensible y activos contables. Evelyn muestra una clara preferencia por una solución basada 100% en software y la nube (SaaS), rechazando la implementación de hardware o servidores físicos por los costos de mantenimiento y espacio que implican. Lo que más le atrae de SmartLock es la capacidad de recibir alertas automáticas de acceso denegado y la generación de reportes estadísticos e indicadores de asistencia, lo cual considera clave para reducir horas-hombre y mejorar la eficiencia en la toma de decisiones.
+
+**3. Josue Nolasco**
+[Escribe aquí el párrafo amplio]
+
+---
+
+#### Segmento: Empresarios (Dueños/Administradores)
+
+**4. Anthony Nolasco**
+[Escribe aquí el párrafo amplio]
+
+**5. Monica Moreno Olivera**
+[Escribe aquí el párrafo amplio]
+
+**6. Hugo Ricardo Rojas Párraga**
+tiene 35, es ingeniero ambiental y gerente de su empresa llamada Gestam Consulting donde se realizan gestiones ambientales a empresas que contraten sus servicios. Hugo ha experimentado problemas con el manejo del acceso a sus oficinas, ya que todo el control lo hace en hojas físicas a mano lo que provoca cierto retraso. Ha tenido malas experiencias donde exempleados ingresan a las instalaciones como lo hacían antes y no desea que eso vuelva a ocurrir. También le gustaría implementar smartlock pagando una membresía económica pero sin adquirir ningún tipo de hardware físico más que los dispositivos móviles. Hugo considera que sería sencillo implementar SmartLock en sus oficinas. Hugo también considera que lo más importante para él son los reportes de asistencia periodicos.
+
+---
+
+#### Síntesis de hallazgos (Insights principales)
+* **Insight 1:** [Resumen de una verdad descubierta, ej: La movilidad es más importante que el hardware robusto].
+* **Insight 2:** [Resumen de otra verdad, ej: El miedo al acceso de ex-empleados es el dolor principal en empresarios].
 
 ## 2.3 Needfinding
 
-### 2.3.1. User Personas.
+### 2.3. User Personas
+
+En esta sección se presentan las fichas de **User Persona** desarrolladas para los dos segmentos clave de **SmartLock**. La creación de estos arquetipos no es arbitraria; surge directamente del análisis de las entrevistas realizadas y del estudio de la competencia (Kisi, Acceso Total y Kronos). 
+
+De las entrevistas, identificamos que la principal fricción es la **dependencia de registros manuales y hardware costoso**, lo que nos llevó a priorizar la agilidad y la movilidad en nuestros perfiles. Del análisis competitivo, detectamos un vacío en soluciones **"Asset-Light"** para PYMES y eventos, lo que define las metas de nuestros personajes: eficiencia sin inversión pesada en infraestructura.
+
+Para la elaboración de estos artefactos, se utilizó la herramienta **UXPressia**, asegurando que cada ficha incluya dimensiones demográficas, psicográficas, metas, frustraciones y el entorno tecnológico del usuario.
+
+---
+
+#### 2.3.1. Segmento 1: Gerentes de Operaciones y TI
+
+##### **Carlos Ortega - "El Protector Eficiente"**
+
+Carlos representa nuestro segmento B2B corporativo. Es el tomador de decisiones que busca transformar la seguridad de su edificio en un activo estratégico basado en datos y no solo en llaves físicas.
+
+![User Persona - Carlos Ortega](/docs/Carlos%20Ortega.png)
+
+**Resumen del Perfil:**
+* **Relación con el problema:** Sufre por la falta de trazabilidad en los accesos de su edificio de oficinas. Su mayor temor es una brecha de seguridad que no pueda auditar.
+* **Características Clave:** * **Metas:** Centralizar el control de múltiples sedes y automatizar reportes de asistencia para RRHH.
+    * **Frustraciones:** El costo de reposición de tarjetas/llaves y la lentitud de los procesos manuales.
+    * **Tecnología:** Usuario avanzado de herramientas SaaS y monitoreo móvil constante.
+
+---
+
+#### 2.3.2. Segmento 2: Organizadores de Eventos y Espacios de Alto Tráfico
+
+##### **Valeria Rios - "La Productora Perfeccionista"**
+
+Valeria representa el segmento dinámico de SmartLock. Su necesidad no es la permanencia, sino la velocidad y la seguridad temporal masiva durante picos de tráfico.
+
+![User Persona - Valeria Rios](/docs/Valeria%20Rios.png)
+
+**Resumen del Perfil:**
+* **Relación con el problema:** El caos en el ingreso es su mayor enemigo. Necesita un sistema que sea fácil de desplegar (sin hardware pesado) y que garantice que nadie use entradas falsificadas.
+* **Características Clave:**
+    * **Metas:** Fluidez total en el ingreso masivo y control de aforo en tiempo real por seguridad.
+    * **Frustraciones:** Listas de invitados desactualizadas y el fraude con capturas de pantalla de códigos QR estáticos.
+    * **Tecnología:** Mobile-first extremo; depende de su smartphone y la nube para coordinar a su staff en terreno.
+
+
 ### 2.3.2. User Task Matrix.
-### 2.3.3. User Journey Mapping.
+En esta sección se presenta el **User Task Matrix**, una herramienta que permite mapear las actividades críticas que nuestros arquetipos realizan para alcanzar sus objetivos de seguridad y gestión. Este artefacto es el resultado directo de la síntesis entre las entrevistas a profundidad y el análisis de la competencia, permitiéndonos identificar qué procesos son rutinarios y cuáles son vitales para el éxito de la operación.
+
+Para este análisis, consideramos a nuestros dos segmentos objetivo representados por:
+* **Carlos Ortega:** Gerente de Operaciones (Segmento Corporativo/Oficinas).
+* **Valeria Rios:** Organizadora de Eventos (Segmento de Espacios de Alto Tráfico).
+
+A continuación, se detallan las tareas identificadas, evaluando su **Frecuencia (F)** y su **Importancia (I)** en una escala de Bajo, Medio y Alto.
+
+| Tareas (Tasks) | Carlos: Frecuencia | Carlos: Importancia | Valeria: Frecuencia | Valeria: Importancia |
+| :--- | :---: | :---: | :---: | :---: |
+| Registro de entrada y salida del personal/asistentes | Alta | Alta | Alta | Alta |
+| Verificación de identidad en puntos de control | Alta | Alta | Alta | Alta |
+| Gestión y entrega de credenciales físicas (llaves, carnets) | Media | Media | Baja | Media |
+| Supervisión de la capacidad máxima de los recintos (aforo) | Baja | Media | Alta | Alta |
+| Gestión de permisos para visitas o contratistas externos | Media | Alta | Alta | Alta |
+| Elaboración de informes de permanencia y puntualidad | Alta | Alta | Baja | Media |
+| Eliminación de credenciales de personal que ya no labora | Media | Alta | Baja | Media |
+| Respuesta ante intentos de ingreso no autorizados | Baja | Alta | Media | Alta |
+
+### **Explicación del Cuadro**
+
+Al analizar la matriz, se observan coincidencias estratégicas y diferencias operativas marcadas por la naturaleza de cada segmento:
+
+* **Tareas Críticas (Coincidencias):** El **Registro de entrada/salida** y la **Verificación de identidad** son las tareas con mayor frecuencia e importancia para ambos. Esto valida que el núcleo de *SmartLock* debe ser la rapidez y la seguridad en estos puntos de fricción.
+* **Diferencias en Frecuencia:** Para Carlos, la **Elaboración de informes** es una tarea de alta frecuencia debido a la necesidad de control administrativo constante (asistencia), mientras que para Valeria es una tarea de baja frecuencia que solo ocurre al cierre del evento. Por otro lado, la **Supervisión de aforo** es crítica y frecuente para Valeria por razones de seguridad civil, mientras que para Carlos es una tarea secundaria.
+* **Puntos de Dolor Identificados:** La **Eliminación de credenciales** tiene una importancia Alta para Carlos (evitar que un exempleado ingrese), pero su frecuencia es Media. En el caso de Valeria, la **Gestión de permisos temporales** es constante debido a la naturaleza volátil del staff de eventos, lo que representa una carga operativa mayor que la de una oficina tradicional.
+
+### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los **User Journey Maps (As-Is)** correspondientes a los dos arquetipos de usuarios principales definidos previamente: Carlos Ortega (Gerente de Operaciones) y Valeria Rios (Organizadora de Eventos). 
+
+El objetivo de estos diagramas es ilustrar el *end-to-end journey* de la situación actual que enfrentan ambos perfiles al intentar gestionar la seguridad y el control de accesos **sin contar con una solución tecnológica centralizada como SmartLock**. Se evidencia el proceso tradicional, desde el descubrimiento de la necesidad operativa, pasando por la gestión manual mediante el uso de llaves físicas o listas impresas, hasta las tareas de auditoría post-ingreso. 
+
+A través de estos mapas, se identifican claramente los puntos de fricción (pain points), las frustraciones y las caídas en la experiencia del usuario, justificando así la necesidad de desarrollar nuestra propuesta de valor digital. Cada mapa está directamente vinculado a su ficha de *User Persona* desarrollada en la plataforma UXPressia.
+
+#### A. User Journey Map: Carlos Ortega (Segmento Corporativo)
+Este mapa detalla la experiencia diaria de Carlos, quien actualmente depende de un sistema obsoleto basado en llaves físicas, registros manuales en cuadernos de portería y reportes poco fiables. Se ilustra la frustración frente a la pérdida de llaves y la falta de visibilidad en tiempo real sobre el flujo de sus empleados.
+
+![Customer Journey Map - Carlos Ortega](/docs/Customer%20Carlos.png)
+
+#### B. User Journey Map: Valeria Rios (Segmento de Eventos)
+Este mapa ilustra el proceso acelerado y estresante de Valeria durante la organización y ejecución de un evento. Se muestra su recorrido "As-Is", donde la gestión de invitados se realiza mediante listas de Excel impresas, generando lentitud en la validación de identidades, largas colas en la puerta y vulnerabilidad ante falsificaciones.
+
+![Customer Journey Map - Valeria Rios](/docs/Customer%20Valeria.png)
+
 ### 2.3.4. Empathy Mapping.
+
 ### 2.3.5. As-is Scenario Mapping.
 
 ## 2.4. Big Picture Event Storming.
+
 ## 2.5. Ubiquitous Language
 ## Identity & Auth
 
