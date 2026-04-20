@@ -112,4 +112,90 @@
 
 ## 3.3. Product Backlog
 
+## Product Backlog Priorizado
 
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | **HU-01** | Inicio de sesión estándar | Como administrador, deseo ingresar con correo y clave para acceder al panel de control. | 8 |
+| 2 | **HU-03** | Creación de usuarios | Como admin de RRHH, deseo registrar empleados con correo único para gestionar el acceso al personal. | 8 |
+| 3 | **HU-04** | Asignación de roles | Como administrador, deseo asignar roles específicos para automatizar los permisos de cada usuario. | 8 |
+| 4 | **HU-08** | Dashboard Real-Time | Como monitor de seguridad, deseo ver los eventos en tiempo real para reaccionar ante incidencias sin recargar la web. | 8 |
+| 5 | **HU-09** | Simulación exitosa | Como desarrollador, deseo simular accesos permitidos para validar el flujo del sistema sin hardware físico. | 8 |
+| 6 | **HU-13** | Historial detallado | Como auditor, deseo ver una lista paginada de movimientos para fiscalizar quién entró y a qué hora. | 8 |
+| 7 | **HU-19** | Desactivación rápida | Como administrador, deseo revocar accesos instantáneamente para proteger la red ante despidos o emergencias. | 8 |
+| 8 | **HU-20** | Gestión de Puertas | Como administrador, deseo configurar puntos de acceso para organizar la infraestructura física del sistema. | 8 |
+| 9 | **HU-26** | Cierre de sesión | Como usuario, deseo cerrar mi sesión para destruir el token de acceso y proteger mi cuenta. | 8 |
+| 10 | **HNF-03** | Encriptación de claves | Como responsable de seguridad, deseo usar hashing bcrypt para que las claves nunca se guarden en texto plano. | 8 |
+| 11 | **HNF-04** | Datos en tránsito | Como usuario, deseo que la comunicación sea vía HTTPS para proteger mis datos sensibles durante el envío. | 8 |
+| 12 | **HNF-15** | Data Isolation | Como cliente corporativo, deseo un esquema multi-empresa para garantizar que nadie más vea mis datos. | 8 |
+| 13 | **HNF-26** | Seguridad OWASP | Como desarrollador, deseo sanitizar todos los inputs para prevenir ataques de inyección SQL o XSS. | 8 |
+| 14 | **TS-03** | Autenticación JWT | Como arquitecto, deseo implementar tokens JWT con rotación para asegurar una autenticación persistente y segura. | 8 |
+| 15 | **TS-05** | Middleware de Roles | Como desarrollador, deseo crear decoradores RBAC para restringir el acceso a la API según el rol del usuario. | 8 |
+| 16 | **TS-06** | Validación de DTOs | Como desarrollador, deseo validar los esquemas de entrada para rechazar peticiones mal formadas. | 8 |
+| 17 | **TS-08** | CORS Policy | Como arquitecto, deseo configurar políticas CORS para que solo dominios autorizados consuman la API. | 8 |
+| 18 | **HU-02** | Autenticación 2FA | Como usuario, deseo una verificación de segundo paso para añadir una capa extra de seguridad a mi cuenta. | 5 |
+| 19 | **HU-05** | Acceso días laborales | Como administrador, deseo restringir el acceso por calendario para evitar ingresos no autorizados en días no laborables. | 5 |
+| 20 | **HU-06** | Acceso franjas horarias | Como administrador, deseo limitar el acceso por horas para asegurar que el personal entre solo en su turno. | 5 |
+| 21 | **HU-10** | Simulación denegada | Como desarrollador, deseo simular accesos fallidos para verificar que las reglas de negocio disparen las alertas correctas. | 5 |
+| 22 | **HU-11** | Alerta intentos fallidos | Como monitor de seguridad, deseo detectar ataques de fuerza bruta para bloquear intrusos a tiempo. | 5 |
+| 23 | **HU-21** | Acceso por puerta | Como administrador, deseo asignar permisos por puerta específica para controlar zonas restringidas. | 5 |
+| 24 | **HU-23** | Reset de contraseña | Como usuario, deseo recuperar mi acceso mediante un enlace temporal para autogestionar mi cuenta. | 5 |
+| 25 | **HU-29** | Alerta desconexión | Como administrador, deseo saber si una puerta pierde conexión para realizar mantenimiento preventivo inmediato. | 5 |
+| 26 | **HNF-01** | Latencia Dashboard | Como usuario, deseo actualizaciones en menos de 1 segundo para tener una experiencia fluida y reactiva. | 5 |
+| 27 | **HNF-05** | Disponibilidad | Como cliente, deseo un uptime del 99.9% para asegurar que el control de acceso nunca se detenga. | 5 |
+| 28 | **HNF-06** | Diseño Responsivo | Como usuario móvil, deseo una interfaz adaptable para gestionar el sistema desde mi smartphone. | 5 |
+| 29 | **HNF-07** | Inmutabilidad logs | Como auditor, deseo que los logs sean de solo lectura para garantizar la integridad de las pruebas legales. | 5 |
+| 30 | **HNF-11** | Tolerancia fallos | Como administrador, deseo que el sistema sea modular para que un fallo en un servicio no tumbe toda la plataforma. | 5 |
+| 31 | **HNF-14** | Anti-Brute Force | Como sistema de seguridad, deseo bloquear IPs tras 5 fallos para mitigar ataques automatizados. | 5 |
+| 32 | **HNF-16** | Backups diarios | Como administrador de IT, deseo respaldos diarios automáticos para recuperar el sistema ante desastres. | 5 |
+| 33 | **HNF-19** | Rate Limiting | Como desarrollador, deseo limitar las peticiones por minuto para proteger la API contra bots y abusos. | 5 |
+| 34 | **HNF-21** | Complejidad clave | Como sistema, deseo exigir claves fuertes para reducir el riesgo de cuentas vulneradas. | 5 |
+| 35 | **HNF-30** | Health Checks | Como equipo de DevOps, deseo monitorear la salud de los microservicios para detectar caídas antes que el usuario. | 5 |
+| 36 | **TS-02** | Estandarización de Respuestas | Como desarrollador frontend, deseo una estructura JSON única para facilitar el consumo de datos. | 5 |
+| 37 | **TS-04** | Paginación Global | Como desarrollador, deseo implementar paginación en las listas para optimizar el rendimiento de la red. | 5 |
+| 38 | **TS-07** | Manejo de Excepciones | Como usuario, deseo ver mensajes de error amigables para entender qué falló sin ver detalles técnicos. | 5 |
+| 39 | **HU-07** | Accesos temporales | Como recepcionista, deseo crear permisos con caducidad para gestionar visitas de forma automática. | 3 |
+| 40 | **HU-12** | Alerta fuera de horario | Como vigilante, deseo recibir notificaciones destacadas para identificar intentos de acceso sospechosos. | 3 |
+| 41 | **HU-14** | Filtros de historial | Como auditor, deseo filtrar por fecha y estado para encontrar registros específicos rápidamente. | 3 |
+| 42 | **HU-15** | Límites Plan Básico | Como dueño del producto, deseo restringir el número de usuarios para incentivar el upgrade a planes premium. | 3 |
+| 43 | **HU-16** | Upgrade Profesional | Como cliente, deseo pagar por el Plan Pro para desbloquear funciones avanzadas y eliminar límites. | 3 |
+| 44 | **HU-17** | Gestión multi-sede | Como gerente, deseo cambiar entre sedes independientes para centralizar la operación de mi empresa. | 3 |
+| 45 | **HU-22** | Alerta uso indebido | Como administrador, deseo etiquetar intentos sin autorización para prevenir espionaje interno. | 3 |
+| 46 | **HU-24** | Exportación de datos | Como administrativo, deseo descargar reportes en CSV para realizar análisis externos o presentaciones. | 3 |
+| 47 | **HU-25** | Cierre de alertas | Como operador, deseo marcar alertas como resueltas para mantener el panel de monitoreo limpio. | 3 |
+| 48 | **HU-30** | Notificación crítica | Como dueño de negocio, deseo recibir emails automáticos en emergencias para estar informado 24/7. | 3 |
+| 49 | **HNF-02** | Rendimiento carga | Como usuario, deseo que la página sea interactiva en menos de 2 segundos para no perder tiempo esperando. | 3 |
+| 50 | **HNF-08** | Escalabilidad | Como sistema, deseo soportar 500 peticiones simultáneas para garantizar estabilidad en horas pico. | 3 |
+| 51 | **HNF-09** | Timeout sesión | Como administrador de seguridad, deseo que las sesiones inactivas expiren para evitar accesos indebidos en PCs desatendidas. | 3 |
+| 52 | **HNF-10** | Compatibilidad | Como usuario, deseo usar cualquier navegador moderno para acceder al sistema sin errores visuales. | 3 |
+| 53 | **HNF-12** | Velocidad 2FA/Email | Como usuario, deseo recibir correos en menos de 5 segundos para no interrumpir mi flujo de trabajo. | 3 |
+| 54 | **HNF-17** | Log de auditoría | Como administrador principal, deseo registrar cambios de configuración para saber quién modificó las reglas del sistema. | 3 |
+| 55 | **HNF-23** | RTO (Recuperación) | Como administrador de sistemas, deseo recuperar la operación en máximo 4 horas tras un desastre total. | 3 |
+| 56 | **HNF-27** | Sincronía NTP | Como sistema legal, deseo usar servidores NTP para que todos los registros tengan una hora exacta y válida. | 3 |
+| 57 | **TS-01** | Documentación OpenAPI | Como desarrollador, deseo una documentación Swagger automática para facilitar la integración de nuevos módulos. | 3 |
+| 58 | **HU-18** | Reportes avanzados | Como gerente, deseo gráficas de horas pico para optimizar el personal en mi establecimiento. | 2 |
+| 59 | **HU-27** | Invitación masiva | Como admin de RRHH, deseo enviar links únicos a múltiples correos para agilizar el onboarding de empleados. | 2 |
+| 60 | **HU-28** | Edición de perfil | Como usuario, deseo actualizar mis datos de contacto y foto para mantener mi perfil al día. | 2 |
+| 61 | **HNF-13** | Accesibilidad WCAG | Como usuario con discapacidad, deseo una interfaz con alto contraste para navegar sin dificultades. | 2 |
+| 62 | **HNF-18** | UX de fallos | Como usuario, deseo interfaces claras que me guíen cuando ocurre un error de conexión o datos. | 2 |
+| 63 | **HNF-20** | Velocidad Export | Como administrativo, deseo procesar descargas masivas en menos de 10 segundos para ser más eficiente. | 2 |
+| 64 | **HNF-29** | Design System | Como diseñador, deseo una UI consistente para que la experiencia de usuario sea uniforme en todas las pantallas. | 2 |
+| 65 | **HNF-22** | Soporte i18n | Como administrador global, deseo que el sistema esté preparado para traducciones para expandir el negocio a otros países. | 1 |
+| 66 | **HNF-24** | Archivado datos | Como administrador de IT, deseo mover logs antiguos a almacenamiento frío para reducir costos de base de datos. | 1 |
+| 67 | **HNF-25** | Consumo batería | Como guardia con tablet, deseo que la app esté optimizada para no agotar la batería durante el turno. | 1 |
+| 68 | **HNF-28** | Regla 3 clics | Como usuario, deseo llegar a cualquier función principal en máximo 3 clics para mejorar mi productividad. | 1 |
+---
+
+* Evidencia de herramienta utilizada : **Jira : **
+
+|<img src="../Resources/Herramientas/story_points.png" alt="Story Points" width="500"/> |
+
+* Evidencia de herramienta utilizada : **Jira : **
+
+|<img src="../Resources/Herramientas/formato.png" alt="Formato de HU" width="500"/> |
+
+* Evidencia de herramienta utilizada : **Jira : **
+
+|<img src="../Resources/Herramientas/organizacion.png" alt="Estructura de prioridad" width="500"/> |
+
+<https://upc-team-open-source.atlassian.net/jira/software/projects/SMAR/boards/1?atlOrigin=eyJpIjoiNDFhNzk1OTIxMGU0NDc5ZjlmYjliMzlmYjU2MDVmOTIiLCJwIjoiaiJ9>
