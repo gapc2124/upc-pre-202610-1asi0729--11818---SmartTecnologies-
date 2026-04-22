@@ -352,11 +352,42 @@ Este mapa ilustra el proceso acelerado y estresante de Valeria durante la organi
 
 ### 2.3.4. Empathy Mapping.
 
+En esta sección, el equipo resume el proceso de elaboración y presenta las capturas de los Empathy Maps realizados en la plataforma UXPressia para cada uno de nuestros User Personas. 
+
+El proceso de elaboración inició con una fase de preparación estratégica, colocando al centro a nuestro User Persona correspondiente. A continuación, procedimos a colocar en cada sección de la herramienta las observaciones debatidas por los miembros del equipo, buscando responder de forma analítica a las siguientes preguntas clave: ¿Con quién estamos empatizando?, ¿Qué necesita hacer?, ¿Qué está diciendo?, ¿Qué está viendo?, ¿Qué está haciendo?, ¿Qué está escuchando? y ¿Cómo se siente y qué piensa? 
+
+Finalmente, logramos identificar los **Pains** (frustraciones y miedos) y **Gains** (beneficios y alegrías) de cada perfil en base a las preguntas fundamentales del modelo: ¿Qué le preocupa?, ¿Qué puede ayudar a resolver sus problemas?, y sobre todo, ¿Qué puede convencerlo de que SmartLock es la alternativa correcta en el mercado?
+
+#### A. Empathy Map: Carlos Ortega (Segmento Corporativo B2B)
+El siguiente mapa de empatía ilustra el entorno corporativo de Carlos, resaltando su constante presión por mantener los costos operativos bajos y su frustración ante la pérdida recurrente de llaves físicas o tarjetas de acceso en sus instalaciones.
+
+![Empathy Map - Carlos Ortega](/docs/Carlos%20Empathy%20map.png)
+
+#### B. Empathy Map: Valeria Rios (Segmento de Eventos)
+En este mapa empatizamos con el entorno de alta presión de Valeria. Se destacan sus preocupaciones principales relacionadas con las largas colas en los eventos, la vulnerabilidad ante entradas falsificadas y su necesidad urgente de una solución ágil que no requiera instalación de hardware.
+
+![Empathy Map - Valeria Rios](/docs/Valeria%20Empathy%20map.png)
 ### 2.3.5. As-is Scenario Mapping.
 
-## 2.4. Big Picture Event Storming.
-## 2.5. Ubiquitous Language
+En esta sección, se desarrollan los **As-is Scenario Maps** para nuestros dos arquetipos de usuario: Carlos Ortega y Valeria Rios. A diferencia del Journey Map, que evalúa el ciclo de vida completo del cliente, esta herramienta nos permite desglosar paso a paso las acciones, pensamientos y emociones de los usuarios frente a un **escenario crítico y específico** dentro de su contexto operativo actual (antes de la implementación de SmartLock).
 
+El mapeo de estos escenarios detalla las fases cronológicas de la situación, lo que el usuario "hace", "piensa" y "siente", permitiendo a nuestro equipo identificar las deficiencias técnicas, los altos costos de resolución y los cuellos de botella que justifican el desarrollo de nuestra plataforma digital.
+
+#### A. As-is Scenario Map: Carlos Ortega (Segmento Corporativo)
+**Escenario evaluado:** Gestión de un incidente de seguridad por pérdida de llave o tarjeta maestra.
+En este mapa se ilustra el proceso tradicional y reactivo que debe seguir Carlos cuando un empleado reporta la pérdida de su credencial de acceso o cuando un ex-empleado no la devuelve. Se evidencia la ineficiencia de depender de un cerrajero, el alto costo económico del reemplazo de cerraduras físicas y el estrés generado por el tiempo en que las instalaciones quedan vulnerables.
+
+![As-is Scenario Map - Carlos Ortega](../docs/Carlos-As-is-Scenario.png)
+
+#### B. As-is Scenario Map: Valeria Rios (Segmento de Eventos)
+**Escenario evaluado:** Control de acceso y validación de aforo durante la "hora pico" de un evento masivo.
+Este escenario detalla el momento más crítico para Valeria: la apertura de puertas de un evento utilizando listas de Excel impresas y validación manual. Se destacan las acciones de su personal de seguridad (staff), la frustración ante la lentitud del proceso, la presión por las largas colas de asistentes y la imposibilidad de tener un conteo real del aforo en tiempo real para reportar a Defensa Civil.
+
+![As-is Scenario Map - Valeria Rios](../docs/Valeria-As-is-Scenario.png)
+## 2.4. Big Picture Event Storming.
+
+
+## 2.5. Ubiquitous Language
 ## Identity & Auth
 
 TERMS:

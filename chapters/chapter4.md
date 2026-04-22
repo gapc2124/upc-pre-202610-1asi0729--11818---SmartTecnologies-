@@ -190,3 +190,9 @@ En esta sección se detalla el diseño relacional de la base de datos de **Smart
 A continuación, se presenta el Diagrama Entidad-Relación (ERD) físico del sistema central utilizando la notación *Crow's Foot*. Este modelo define las tablas principales (`users`, `spaces`, `credentials` y `access_logs`), los tipos de datos, y las llaves primarias (PK) y foráneas (FK) que establecen las relaciones estructurales.
 
 ![Database ERD Diagram](../Resources/Architecture/SmartLock_ERD-Diagrama_Entidad_Relación__ERD____SmartLock_Database.png)
+
+
+
+
+
+
