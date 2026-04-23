@@ -23,7 +23,11 @@
 ### 4.6.2. Software Architecture Context Diagram.
 ### 4.6.3. Software Architecture Container Diagrams.
 ### 4.6.4. Software Architecture Components Diagrams.
+
 ## 4.7. Software Object-Oriented Design.
+
+---
+
 ### 4.7.1. Class Diagrams.
 
 #### Diagrama de clases (Frontend)
@@ -69,4 +73,25 @@ para que el sistema sea fácil de mantener y escalar si luego queremos
 cambiar algo de la base de datos o la lógica de las suscripciones.
 
 ## 4.8. Database Design.
+
+---
+
 ### 4.8.1. Database Diagrams.
+
+<img src="/Resources/Data-Base-Diagram/Data-Base-Diagram-image.png">
+
+El diagrama de base de datos para SmartLock se ha estructurado bajo un 
+enfoque de normalización 3FN y Domain-Driven Design (DDD), organizando 
+la información en Bounded Contexts que actúan como Aggregate Roots 
+(como Users y Organization) para garantizar la integridad operativa y 
+la escalabilidad mediante el uso de tipos de datos atómicos en MySQL. 
+Desde la perspectiva de seguridad y persistencia, el diseño separa 
+estrictamente las credenciales en authentications y los datos sensibles 
+en user_profiles (con correos encriptados) para cumplir con las leyes 
+de protección de datos, mientras que la tabla access_logs asegura una 
+auditoría inmutable de cada evento físico. Finalmente, la arquitectura 
+está totalmente optimizada para un ORM como Hibernate, facilitando el 
+mapeo de relaciones uno-a-muchos y uno-a-uno mediante claves foráneas 
+claras y tipos bigint, lo que permite un manejo eficiente de la carga 
+perezosa (Lazy Loading) y una transición fluida del modelo relacional 
+al código en Spring Boot.
