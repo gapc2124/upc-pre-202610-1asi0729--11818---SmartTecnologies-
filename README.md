@@ -46,6 +46,7 @@
 |-------------|------------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1\.0        | 07/04/2026 | Adrian Fernando Palacios Tinoco                    | Se agrego parte de la estructura del capitulo I del informe, asimismo se agrego la carátula, el startup profile; y antecedentes y problemáticas |
 | 1\.1        | 16/04/2026 | Adrian Fernando Palacios Tinoco                    | Se agregó el Style Guidelines y el information Architecture                                                                                     |
+| 4\.1        | 22/04/2026 | Adrian Fernando Palacios Tinoco                    | Se agregó el diagrama de Clases tanto para Frontend como para Backend                                                                           |
 
 </div><br><br>
 

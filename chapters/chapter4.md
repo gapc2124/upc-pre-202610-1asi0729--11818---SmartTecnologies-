@@ -28,7 +28,7 @@
 
 #### Diagrama de clases (Frontend)
 
-<img src="/Resources/Diagram-Class/Frontend/Class-Diagram-Fronted-image.png">
+<img src="/Resources/Diagram-Class/Frontend/Class-Diagram-Frontend-image.png">
 
 El diagrama organiza el frontend de SmartLock en cinco 
 Bounded Contexts (Authentication, Organization, User, 
@@ -54,6 +54,19 @@ del modelo de negocio.
 
 #### Diagrama de clases (Backend)
 
+<img src="/Resources/Diagram-Class/Backend/Class-Diagram-Backend-image.png">
+
+El backend de nuestro proyecto SmartLock lo hemos armado siguiendo 
+a tope la arquitectura DDD en SpringBoot, separando todo en los 5 
+Bounded Contexts y los 8 agregados que sacamos del Event Storming 
+para que no sea un espagueti de código. Usamos Aggregate Roots como 
+Security y Organization para mandar sobre entidades como Door y Office, 
+asegurando que ninguna puerta se abra si no pasa por las reglas del 
+negocio. Metimos patrones que vimos en clase como el Assembler para 
+limpiar los datos que vienen del front, usamos Records para que los 
+DTOs sean inmutables y puras Interfaces en los servicios y repositorios 
+para que el sistema sea fácil de mantener y escalar si luego queremos 
+cambiar algo de la base de datos o la lógica de las suscripciones.
 
 ## 4.8. Database Design.
 ### 4.8.1. Database Diagrams.
