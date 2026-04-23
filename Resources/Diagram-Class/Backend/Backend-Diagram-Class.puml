@@ -1,0 +1,136 @@
+@startuml
+title Diagrama de Clases Backend - SmartLock (Fixed & Enterprise)
+
+' --- SHARED KERNEL ---
+package "shared.domain.model.valueobjects" {
+    class Email <<(R, #FF7700) record>> {
+        + String value
+    }
+    class Address <<(R, #FF7700) record>> {
+        + String street
+        + String city
+    }
+}
+
+' --- BOUNDED CONTEXT: SECURITY (Core) ---
+package "security.domain.model.aggregates" {
+    class Security <<Aggregate Root>> {
+        - Long id
+        - List<Door> doors
+        + validateAccess(AccessUser user): boolean
+    }
+    class Door <<Entity>> {
+        - Long id
+        - String macAddress
+        - DoorStatus status
+        + open(): void
+        + close(): void
+    }
+    enum DoorStatus {
+        OPEN
+        CLOSED
+        LOCKED_OUT
+    }
+}
+
+package "security.application.internal.commandservices" {
+    interface DoorCommandService <<Interface>> {
+        + handle(OpenDoorCommand command): Long
+    }
+    class DoorCommandServiceImpl implements DoorCommandService {
+        - DoorRepository doorRepository
+        - EventPublisher eventPublisher
+        + handle(OpenDoorCommand command): Long
+    }
+}
+
+package "security.interfaces.rest.resources" {
+    class DoorRequest <<(R, #FF7700) record>> {
+        + Long doorId
+        + UUID userId
+    }
+    class DoorResponse <<(R, #FF7700) record>> {
+        + Long id
+        + String status
+        + String message
+    }
+}
+
+package "security.interfaces.rest.transform" {
+    class DoorResourceAssembler {
+        + toResourceFromEntity(Door entity): DoorResponse
+        + toCommandFromRequest(DoorRequest request): OpenDoorCommand
+    }
+}
+
+' --- BOUNDED CONTEXT: ORGANIZATION ---
+package "organization.domain.model.aggregates" {
+    class Organization <<Aggregate Root>> {
+        - Long id
+        - String name
+        - List<Office> offices
+    }
+    class Office <<Entity>> {
+        - Long id
+        - Address location
+    }
+}
+
+' --- BOUNDED CONTEXT: USER ---
+package "user.domain.model.aggregates" {
+    class SystemUser <<Aggregate Root>> {
+        - UUID id
+        - Email email
+    }
+    class AccessUser <<Aggregate Root>> {
+        - UUID id
+        - String dni
+        + canAccess(): boolean
+    }
+}
+
+' --- BOUNDED CONTEXT: SUBSCRIPTION ---
+package "subscription.domain.model.aggregates" {
+    class Subscription <<Aggregate Root>> {
+        - Long id
+        - PlanType plan
+        + isActive(): boolean
+    }
+}
+
+' --- BOUNDED CONTEXT: AUTHENTICATION ---
+package "authentication.domain.model.aggregates" {
+    class Authentication <<Aggregate Root>> {
+        - String token
+        - LocalDateTime expiresAt
+    }
+}
+
+' --- INFRASTRUCTURE ---
+package "security.infrastructure.persistence.jpa" {
+    interface DoorRepository <<Interface>> {
+        + findByMacAddress(String mac): Optional<Door>
+    }
+}
+
+' --- RELACIONES ---
+' Relaciones de Composición (Internas de Agregado)
+Organization "1" *-- "many" Office : "has >"
+Security "1" *-- "many" Door : "controls >"
+
+' Relaciones de Asociación (Inter-Context)
+SystemUser "1" o-- "1" Authentication : "possesses >"
+AccessUser "1" o-- "1" Subscription : "requires >"
+Office "1" o-- "many" Door : "contains >"
+
+' Relaciones de Dependencia (Capa de Aplicación e Infra)
+SecurityController --> DoorCommandService : "delegates to"
+SecurityController --> SecurityAssembler : "uses"
+DoorCommandServiceImpl --> "security.domain.model.aggregates.Door" : "updates"
+DoorCommandServiceImpl --> "user.domain.model.aggregates.AccessUser" : "verifies"
+
+' Relaciones con Shared Kernel
+SystemUser ..> Email : "uses"
+Office ..> Address : "located at"
+
+@enduml

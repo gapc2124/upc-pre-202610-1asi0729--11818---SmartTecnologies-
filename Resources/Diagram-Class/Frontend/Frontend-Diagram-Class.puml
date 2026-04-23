@@ -1,0 +1,108 @@
+@startuml
+title Diagrama de Clases Frontend - SmartLock (Arquitectura DDD Completa)
+
+' --- SHARED KERNEL / INFRASTRUCTURE ---
+package "shared.infrastructure" {
+    class EventBus <<Service>> {
+        + publish(event: string, data: any)
+        + subscribe(event: string): Observable
+    }
+    class HttpAdapter {
+        + get(url: string)
+        + post(url: string, body: any)
+    }
+    interface BaseAssembler<R, E> {
+        + toEntity(resource: R): E
+        + toCollection(resources: R[]): E[]
+    }
+}
+
+' --- BOUNDED CONTEXT: AUTHENTICATION ---
+package "authentication.domain" {
+    class Authentication <<Aggregate Root>> {
+        + id: UUID
+        + token: string
+        + lastLogin: DateTime
+    }
+}
+
+' --- BOUNDED CONTEXT: ORGANIZATION ---
+package "organization.domain" {
+    class Organization <<Aggregate Root>> {
+        + id: UUID
+        + name: string
+        + offices: Office[]
+    }
+    class Office <<Aggregate>> {
+        + id: UUID
+        + address: string
+    }
+}
+
+' --- BOUNDED CONTEXT: USER ---
+package "user.domain" {
+    class SystemUser <<Aggregate Root>> {
+        + id: UUID
+        + email: string
+        + permissions: string[]
+    }
+    class AccessUser <<Aggregate>> {
+        + id: UUID
+        + identityDoc: string
+        + isActive: boolean
+    }
+}
+
+' --- BOUNDED CONTEXT: SECURITY ---
+package "security.domain" {
+    class Security <<Aggregate Root>> {
+        + id: UUID
+        + securityLevel: string
+        + doors: Door[]
+    }
+    class Door <<Aggregate>> {
+        + id: UUID
+        + status: 'OPEN' | 'CLOSED'
+        + macAddress: string
+    }
+}
+
+' --- BOUNDED CONTEXT: SUBSCRIPTION ---
+package "subscription.domain" {
+    class Subscription <<Aggregate Root>> {
+        + id: UUID
+        + planType: string
+        + expirationDate: DateTime
+    }
+}
+
+' --- APPLICATION LAYER (STORES) ---
+package "app.application" {
+    class SecurityStore <<Service>> {
+        - doorsSignal: Signal<Door[]>
+        - securityApi: SecurityApi
+        + loadDoors(): void
+        + toggleDoor(doorId: UUID): void
+    }
+    class UserStore <<Service>> {
+        - systemUserSignal: Signal<SystemUser | null>
+        + updateProfile(data: any): void
+    }
+}
+
+' --- INFRASTRUCTURE (ASSEMBLERS) ---
+package "app.infrastructure.assemblers" {
+    class SecurityAssembler implements BaseAssembler
+    class UserAssembler implements BaseAssembler
+}
+
+' --- RELATIONSHIPS ---
+Organization "1" *-- "many" Office : composes
+Security "1" *-- "many" Door : controls
+SecurityStore --> Security : manages
+UserStore --> SystemUser : manages
+SecurityStore --> EventBus : publishes "DoorOpened"
+SecurityStore --> SecurityAssembler : uses
+SecurityAssembler ..> Door : creates
+
+@enduml
