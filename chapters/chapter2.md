@@ -480,9 +480,8 @@ En esta sección, el equipo introduce y resume el proceso colaborativo realizado
 <img src="../Resources/EventStorming/big-picture/bigPicture.jpeg" width="800">
 
 ## 2.5. Ubiquitous Language
-## Identity & Auth
+## Authentication context
 
-TERMS:
 - Subscription: Platform tenant subscription
 - System User: Admin/Operator/Auditor who accesses the web platform
 - Authentication: Verifying user identity (login + 2FA)
@@ -495,9 +494,8 @@ TERMS:
 
 ---
 
-## Physical Space
+## Organization context
 
-TERMS:
 - Location: Physical site/office where doors are installed
 - Door: Physical entry point with access control
 - Access Mode: How door grants access (card, biometric, PIN, etc.)
@@ -506,9 +504,8 @@ TERMS:
 
 ---
 
-## Access Control
+## Organization context
 
-TERMS:
 - Access User: Person who passes through physical doors
 - Access Policy: Set of rules defining who can access
 - Schedule: Time windows for access (workdays, hours)
@@ -520,9 +517,8 @@ TERMS:
 
 ---
 
-## Security
+## Security context
 
-TERMS:
 - Security Alert: Notification of suspicious/unsafe activity
 - Access Denial Reason: Why access was denied (invalid credentials, out of schedule, policy violation)
 - Repeated Failed Attempts: Multiple failed access attempts
@@ -534,10 +530,9 @@ TERMS:
 
 ---
 
-## Billing
+## Subscription context
 
-TERMS:
-- Subscription Plan: Paid tier (FREE, PROFESSIONAL, ENTERPRISE)
+- Subscription Plan: Paid tier (Principiante, Eventos, Corporativo)
 - Subscription Upgrade/Downgrade: Plan level changes
 - Payment Failure: Failed billing transaction
 - Billing Renewal: Automatic recurring payment
