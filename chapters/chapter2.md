@@ -475,7 +475,9 @@ Este escenario detalla el momento más crítico para Valeria: la apertura de pue
 
 ![As-is Scenario Map - Valeria Rios](../docs/Valeria-As-is-Scenario.png)
 ## 2.4. Big Picture Event Storming.
+En esta sección, el equipo introduce y resume el proceso colaborativo realizado para entender el dominio del negocio de SmartLock. Durante la sesión, nos enfocamos en identificar los eventos significativos, procesos clave y las relaciones entre ellos, permitiéndonos mapear el flujo completo desde que un usuario solicita un acceso hasta que la cerradura se activa mediante el código QR dinámico. Esta primera aproximación visual de alto nivel nos permitió explorar el landscape del negocio, exponiendo potenciales problemas de sincronización y validación, así como oportunidades para optimizar la experiencia del usuario final al eliminar la dependencia de hardware físico tradicional.
 
+<img src="../Resources/EventStorming/big-picture/bigPicture.jpeg" width="800">
 
 ## 2.5. Ubiquitous Language
 ## Identity & Auth
