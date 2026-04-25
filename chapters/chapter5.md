@@ -65,12 +65,92 @@ El equipo aplica el estándar **Conventional Commits** en todos los mensajes de 
 * `refactor`: Mejora de código sin añadir funciones ni arreglar bugs.
 * `test`: Adición o corrección de pruebas.
 * `chore`: Mantenimiento y actualización de configuraciones.
-### 5.1.3. Source Code Style Guide & Conventions.
-### 5.1.4. Software Deployment Configuration.
-## 5.2. Landing Page, Services & Applications Implementation.
+### 5.1.3. Source Code Style Guide & Conventions
+
+Para garantizar la mantenibilidad, legibilidad y colaboración eficiente dentro del equipo **SmartIndustries**, se han adoptado guías de estilo y convenciones de codificación internacionales. Como regla mandatoria, **toda la nomenclatura (clases, métodos, variables, comentarios y documentación) se realiza estrictamente en inglés**.
+
+#### A. HTML & CSS (Google HTML/CSS Style Guide)
+Se siguen las recomendaciones de la *Google HTML/CSS Style Guide* para asegurar un marcado limpio y hojas de estilo eficientes:
+* **HTML:** Uso de etiquetas semánticas, indentación de 2 espacios y omisión de protocolos en URLs de recursos (ej. `//www.google.com`).
+* **CSS:** Uso de la nomenclatura **kebab-case** para nombres de clases (ej. `.access-button`). Se prioriza el uso de variables de CSS y utilidades de **TailwindCSS** para mantener la consistencia visual.
+
+#### B. TypeScript & Angular (Google TypeScript Style Guide / Angular Coding Style)
+Para el desarrollo de la Web Application, se aplican las guías oficiales de Angular:
+* **Nomenclatura:** `PascalCase` para nombres de clases (ej. `AuthService`) y `camelCase` para variables y métodos (ej. `generateQrCode()`).
+* **Estructura:** Se utiliza la estructura de carpetas sugerida por Angular (componentes, servicios, modelos) y se aplican decoradores de manera consistente.
+* **Tipado:** Se evita el uso de `any`, forzando el tipado fuerte para aprovechar las ventajas de TypeScript.
+
+#### C. Java & Spring Boot (Google Java Style Guide)
+El backend sigue la *Google Java Style Guide* y las mejores prácticas de Spring Boot:
+* **Clases:** Uso de `PascalCase` y nombres descriptivos basados en el dominio (ej. `AccessPolicyController`).
+* **Variables/Métodos:** Uso de `camelCase`.
+* **Anotaciones:** Uso correcto de las anotaciones de Spring (ej. `@RestController`, `@Service`, `@Repository`) para mantener la inversión de control y la inyección de dependencias.
+* **Documentación:** Todo el código debe estar auto-documentado y los métodos complejos deben incluir JavaDocs en inglés.
+
+#### D. Gherkin (Readable Specifications)
+Para la definición de los criterios de aceptación en las historias de usuario, se sigue la sintaxis de **Gherkin** (Given-When-Then), asegurando que las especificaciones sean legibles tanto para el equipo técnico como para los stakeholders.
+
+---
+
+### 5.1.4. Software Deployment Configuration
+
+La estrategia de despliegue de **SmartLock** se basa en un modelo de **Integración y Despliegue Continuo (CI/CD)** utilizando **GitHub Actions**, lo que permite que cada cambio validado en la rama `main` se publique automáticamente en la infraestructura de **Amazon Web Services (AWS)**.
+
+#### Ecosistema de Despliegue
+| Producto | Entorno de Hosting | Tecnología de Despliegue |
+| :--- | :--- | :--- |
+| **Landing Page** | Amazon S3 & CloudFront | Estático (HTML/CSS/JS) con CDN para baja latencia. |
+| **Frontend Web App** | Amazon S3 & CloudFront | Angular Build (Producción) con certificados SSL. |
+| **Web Services** | Amazon Elastic Beanstalk | Java Artifact (JAR) con escalado automático. |
+| **Database** | Amazon RDS (MySQL) | Instancia gestionada con backups automáticos. |
+
+#### Pasos para el Despliegue Satisfactorio
+
+1.  **Build Local & Testing:** El desarrollador valida el código localmente ejecutando pruebas unitarias.
+2.  **Push a GitHub:** Se realiza el *push* a la rama de funcionalidad y se abre un Pull Request hacia `develop`.
+3.  **CI Pipeline (GitHub Actions):** * Se dispara un flujo de trabajo que compila el proyecto (Maven para Java, npm para Angular).
+    * Se ejecutan las pruebas automatizadas. Si alguna falla, el despliegue se detiene.
+4.  **Deployment (Frontend):** Una vez aprobada la fusión a `main`, el código de la Landing Page y la Web App se sincroniza con el bucket de **Amazon S3**. Se invalida la caché de **CloudFront** para que los usuarios vean los cambios de inmediato.
+5.  **Deployment (Backend):** El artefacto `.jar` de Spring Boot se envía a **AWS Elastic Beanstalk**. El servicio gestiona el balanceo de carga y actualiza las instancias sin tiempo de inactividad (*Zero Downtime Deployment*).
+6.  **Verificación:** Se realiza una prueba de humo (*smoke test*) en los endpoints de producción para asegurar la conectividad con **Amazon RDS**.
+## 5.2. Landing Page, Services & Applications Implementation
+
+En esta sección se detalla y evidencia el proceso continuo de implementación, pruebas de software, documentación técnica y despliegue en la nube de los componentes de la solución: Landing Page, RESTful Web Services y Frontend Web Applications. A partir de la priorización establecida en el Product Backlog, el desarrollo se ha estructurado mediante iteraciones ágiles, garantizando que tanto los procesos *core* del negocio (validación de accesos) como los procesos de soporte (autenticación) sean construidos y desplegados progresivamente aplicando principios de *Responsive Web Design*.
+
 ### 5.2.1. Sprint 1
-#### 5.2.1.1. Sprint Planning 1.
-#### 5.2.1.2. Aspect Leaders and Collaborators.
+
+En esta sección se registra y explica el avance obtenido durante el primer ciclo de desarrollo (Sprint 1), abarcando tanto la construcción de los productos de software iniciales como el trabajo colaborativo del equipo. Se incluyen los detalles de planificación, los líderes de cada aspecto, el backlog comprometido y las evidencias de ejecución, documentación y despliegue del trabajo completado.
+
+#### 5.2.1.1. Sprint Planning 1
+
+El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de SmartLock. Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionaron las Historias de Usuario más prioritarias del Product Backlog para definir el objetivo central de la iteración. A continuación, se presenta el cuadro resumen con los detalles y acuerdos de esta reunión:
+
+| **Sprint #** | Sprint 1 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 2026-04-20 |
+| **Time** | 19:00 PM |
+| **Location** | Reunión virtual (Microsoft Teams) |
+| **Prepared By** | Huaman Oscco, Aldo Jesus |
+| **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Palacios Tinoco, Adrian Fernando / Huaman Oscco, Aldo Jesus / Limache Coronel, Imanol Fabricio / Ayllon Pauccar, Juan David |
+| **Sprint n – 1 Review Summary** | Al ser el primer Sprint de desarrollo, la revisión anterior corresponde a la fase de ideación. Resultados alcanzados: arquitectura C4 finalizada, bases de datos diseñadas y repositorios GitHub configurados. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio. |
+| **Sprint n – 1 Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de diagramas compartidos, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | **Contexto:** El equipo decidió enfocar el primer esfuerzo de codificación en sentar las bases operativas de la plataforma, desarrollando la Landing Page para presentar el producto y construyendo el sistema central de autenticación y gestión de identidad, lo cual es requisito previo para cualquier operación de acceso físico. <br><br> **Sprint Goal:**<br>*"Our focus is on offering a secure and reliable authentication gateway for the initial users of SmartLock, while establishing the product's digital presence through a responsive Landing Page.*<br>*We believe it delivers a trustworthy onboarding experience to administrators and clear product value proposition to prospective customers.*<br>*This will be confirmed when administrators can successfully register, log in using 2FA, and access the main dashboard, and visitors can navigate the Landing Page features without errors."* |
+| **Sprint n Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar los módulos de autenticación básicos). |
+| **Sum of Story Points** | 29 Story Points. |
+
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+Para asegurar la eficiencia durante este primer Sprint, el alcance funcional se ha dividido en "Aspectos", los cuales representan módulos específicos de la arquitectura a construir. A continuación, se presenta la matriz **Leadership-and-Collaboration Matrix (LACX)**, la cual define quién asume el rol de Líder (L) —responsable de la revisión y entrega de ese módulo— y quiénes actúan como Colaboradores (C) apoyando en el desarrollo de tareas específicas. Esta organización tiene correlación directa con la selección de tareas en Jira.
+
+| Team Member (Last Name, First Name) | GitHub Username | Landing Page (UI/UX & Frontend) | Identity & Auth (Backend API) | Security Configuration (AWS & DB) |
+| :--- | :--- | :--- | :--- | :--- |
+| Peñaranda Caldas, Gabriel Augusto | gapc2124 | C | L | C |
+| Palacios Tinoco, Adrian Fernando | adrian-palacios | C | C | L |
+| Huaman Oscco, Aldo Jesus | aldo-huaman | L | C | C |
+| Limache Coronel, Imanol Fabricio | imanol-limache | C | C | C |
+| Ayllon Pauccar, Juan David | juan-ayllon | C | C | C |
 ### Aspect Leaders and Collaborators
 
 * En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **SmartLock**.
@@ -93,8 +173,6 @@ La organización de líderes y colaboradores está directamente relacionada con 
 #### 5.2.1.3. Sprint Backlog 1.
 
 * "Nuestro objetivo a sido consolidar el núcleo de seguridad y gestión de identidades del sistema SmartLock, de manera teorica hemos logrado la implementación de mecanismos de autenticación, aislamiento total de datos por cliente y blindaje contra ataques externos. Con esto, hemos transformado un diseño conceptual en una infraestructura técnica funcional que garantiza que solo las personas correctas tengan acceso a los recursos correctos, bajo un entorno de comunicación 100% cifrado y seguro. Esperamos que nuestros clientes tengan siempre la seguridad de que nuestro producto sera 100% confiable y eficiente"
-
-|<img src="../Resources/Herramientas/Sprint.png" alt="Estructura de prioridad" width="850"/> |s
 
 <https://upc-team-open-source.atlassian.net/?continue=https%3A%2F%2Fupc-team-open-source.atlassian.net%2Fwelcome%2Fsoftware%3FprojectId%3D10000&atlOrigin=eyJpIjoiNjJkNmViYTYyM2ZmNGMzMDlmYjRiMDQ0MTNkMGVkZDIiLCJwIjoiamlyYS1zb2Z0d2FyZSJ9>
 
