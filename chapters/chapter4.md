@@ -143,7 +143,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Inicio de Sesión
 
-![Inicio Sesión](/Resources/Chapter4/Web-Application/Inicio-sesion.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Inicio-sesion.png" width="800">
+</p>
 
 **Descripción:** Wireframe de la pantalla de acceso principal que define la estructura de los campos de autenticación, el botón de inicio de sesión y los elementos de recuperación de acceso.
 
@@ -151,7 +153,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Registro de Sesión (Sign Up)
 
-![Registro Sesión](/Resources/Chapter4/Web-Application/Registro-Sesion.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Registro-Sesion.png" width="800">
+</p>
 
 **Descripción:** Esquema del formulario de registro orientado al alta de nuevos administradores dentro de la plataforma, mostrando la distribución lógica de los campos requeridos.
 
@@ -159,7 +163,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Autenticación de Dos Factores (2FA)
 
-![Autenticación 2FA](/Resources/Chapter4/Web-Application/Autenticacion-2FA.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Autenticacion-2FA.png" width="800">
+</p>
 
 **Descripción:** Diseño estructural de la segunda capa de seguridad mediante verificación por código, enfocado en la simplicidad de interacción y validación segura del usuario.
 
@@ -169,7 +175,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Creación de Sedes (Plan Principiante)
 
-![Crear Sedes](/Resources/Chapter4/Web-Application/crear-sedes-plan-principiante.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/crear-sedes-plan-principiante.png" width="800">
+</p>
 
 **Descripción:** Wireframe del proceso inicial de configuración de sedes, donde se organizan los campos necesarios para el despliegue y administración básica del sistema.
 
@@ -177,7 +185,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard de Puntos de Control
 
-![Dashboard Puntos de Control](/Resources/Chapter4/Web-Application/Dashboard-Puntos-de-Control.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Dashboard-Puntos-de-Control.png" width="800">
+</p>
 
 **Descripción:** Esquema de monitoreo de dispositivos físicos y puntos de acceso, utilizando una distribución visual en cuadrícula para facilitar el control operativo en tiempo real.
 
@@ -187,7 +197,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard Corporativo
 
-![Dashboard Corporativo](/Resources/Chapter4/Web-Application/Dashboard-corportivo.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Dashboard-corportivo.png" width="800">
+</p>
 
 **Descripción:** Vista de alto nivel orientada a organizaciones empresariales, priorizando métricas globales, indicadores de seguridad y administración multisede.
 
@@ -195,7 +207,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard Principiante
 
-![Dashboard Principiante](/Resources/Chapter4/Web-Application/Dashboard-gratuito.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Dashboard-gratuito.png" width="800">
+</p>
 
 **Descripción:** Versión simplificada del panel principal, diseñada para usuarios del plan gratuito, manteniendo consistencia visual y acceso a funciones esenciales.
 
@@ -205,7 +219,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard de Usuarios
 
-![Dashboard Usuarios](/Resources/Chapter4/Web-Application/Dashboard-usuarios.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Dashboard-usuarios.png" width="800">
+</p>
 
 **Descripción:** Distribución estructural del módulo de gestión de usuarios, incluyendo filtros, tabla de registros, búsqueda avanzada y administración de permisos.
 
@@ -213,7 +229,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Gestión de Eventos
 
-![Dashboard Eventos](/Resources/Chapter4/Web-Application/Dashboard-eventos.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Dashboard-eventos.png" width="800">
+</p>
 
 **Descripción:** Módulo orientado a la configuración de accesos temporales mediante eventos programados, permitiendo restricciones horarias y control de visitantes.
 
@@ -221,7 +239,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Gestión de Credenciales
 
-![Dashboard Credenciales](/Resources/Chapter4/Web-Application/Dashboard-Credenciales.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Dashboard-Credenciales.png" width="800">
+</p>
 
 **Descripción:** Organización funcional del sistema de emisión y control de credenciales digitales, permitiendo el seguimiento de accesos autorizados.
 
@@ -229,7 +249,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Bitácora de Accesos
 
-![Dashboard Bitácora](/Resources/Chapter4/Web-Application/Dashboard-Bitacora.png)
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Dashboard-Bitacora.png" width="800">
+</p>
 
 **Descripción:** Estructura diseñada para la visualización de logs históricos de acceso, facilitando auditorías de seguridad y trazabilidad de eventos.
 
