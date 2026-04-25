@@ -14,13 +14,13 @@ Elegimos una paleta que grite **seguridad y tecnología**, pero sin cansar la vi
 * **Gris Neutro (#E0E1DD):** Este va de fondo en las secciones. Es limpio y hace que los demás elementos resalten sin esfuerzo.
 * **Azul Eléctrico (#3E92CC):** Este es nuestro "call to action". Si hay algo que el usuario tiene que clickear sí o sí (como el botón de "Abrir Puerta" o "Guardar Configuración"), va en este color.
 
-<img src="/Resources/Style%20Guidelines/Paleta-de-colores/Paleta-de-colores.PNG">
+<img src="/Resources/Chapter4/Style-Guidelines/Paleta-de-colores/Paleta-de-colores.PNG">
 
 
 **Branding**<br>
 El logo de **SmartLock** es directo al grano: un **candado**. Elegimos este isotipo porque es el símbolo universal de la seguridad física; no necesitamos complicarlo con más adornos para que el usuario entienda qué hacemos. Lo que lo hace moderno es su diseño minimalista y limpio. Acompañando al candado, la tipografía del nombre es sólida y de cortes precisos. Queríamos que la identidad visual transmitiera esa firmeza y robustez que se espera de un sistema de seguridad confiable, alejándonos de cualquier estética que pudiera parecer "frágil" o improvisada.
 
-<img src="/Resources/Logo/SmartLock-Logo.png">
+<img src="/Resources/Chapter4/Logo/SmartLock-Logo.png">
 
 **Typography** <br>
 Nos fuimos por **Inter**. ¿Por qué? Porque cuando tienes una lista gigante de registros de entrada y salida, necesitas una letra que se lea perfecto en pantallas de cualquier tamaño. Es una fuente *sans-serif* optimizada para entornos digitales.
@@ -124,11 +124,11 @@ La navegación en SmartLock está pensada para ser "invisible" y eficiente:
 En esta sección se detalla el proceso de diseño de la interfaz de usuario para la página de aterrizaje de **SmartLock**. El diseño se centra en la conversión de usuarios y la exposición clara de la propuesta de valor del sistema de control de acceso.
 ### 4.3.1. Landing Page Wireframe.
 El wireframe de baja fidelidad define la estructura visual y la jerarquía de la información. Se ha priorizado una navegación intuitiva, destacando las funcionalidades principales y los beneficios de seguridad del sistema.
-![Landing Page Wireframe](/Resources/LandingPage/Wireframe%20Landing%20Page.png)
+![Landing Page Wireframe](/Resources/Chapter4/LandingPage/Wireframe%20Landing%20Page.png)
 * **Elementos clave:** Estructura de navegación, sección hero con llamado a la acción (CTA) y secciones de beneficios para el segmento de negocios.
 ### 4.3.2. Landing Page Mock-up.
 El mock-up de alta fidelidad integra la identidad visual de la marca, incluyendo la paleta de colores, tipografía y elementos gráficos finales. Este diseño representa la apariencia exacta que tendrá la aplicación web una vez implementada.
-![Landing Page Mock-up](/Resources/LandingPage/Mockup%20Landing%20Page.png)
+![Landing Page Mock-up](/Resources/Chapter4/LandingPage/Mockup%20Landing%20Page.png)
 * **Detalles estéticos:** Uso de contrastes para mejorar la legibilidad y elementos visuales que refuerzan la confianza y modernidad del sistema **SmartLock**.
 ## 4.4. Web Applications UX/UI Design.
 ### 4.4.1. Web Applications Wireframes.
