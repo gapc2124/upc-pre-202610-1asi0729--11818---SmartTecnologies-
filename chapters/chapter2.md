@@ -432,6 +432,7 @@ En este mapa empatizamos con el entorno de alta presión de Valeria. Se destacan
 ![Empathy Map - Valeria Rios](/Resources/Chapter2/docs/Valeria%20Empathy%20map.png)
 ### 2.3.5. As-is Scenario Mapping.
 
+<<<<<<< HEAD
 En esta sección, se desarrollan los **As-is Scenario Maps** para nuestros dos arquetipos de usuario: Carlos Ortega y Valeria Rios. A diferencia del Journey Map, que evalúa el ciclo de vida completo del cliente, esta herramienta nos permite desglosar paso a paso las acciones, pensamientos y emociones de los usuarios frente a un **escenario crítico y específico** dentro de su contexto operativo actual (antes de la implementación de SmartLock).
 
 El mapeo de estos escenarios detalla las fases cronológicas de la situación, lo que el usuario "hace", "piensa" y "siente", permitiendo a nuestro equipo identificar las deficiencias técnicas, los altos costos de resolución y los cuellos de botella que justifican el desarrollo de nuestra plataforma digital.
@@ -464,6 +465,14 @@ Esta primera aproximación visual de alto nivel nos permitió explorar el landsc
 ## 2.5. Ubiquitous Language
 ## Authentication context
 
+=======
+## 2.4. Big Picture Event Storming.
+
+## 2.5. Ubiquitous Language
+## Identity & Auth
+
+TERMS:
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 - Subscription: Platform tenant subscription
 - System User: Admin/Operator/Auditor who accesses the web platform
 - Authentication: Verifying user identity (login + 2FA)
@@ -476,8 +485,14 @@ Esta primera aproximación visual de alto nivel nos permitió explorar el landsc
 
 ---
 
+<<<<<<< HEAD
 ## Organization context
 
+=======
+## Physical Space
+
+TERMS:
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 - Location: Physical site/office where doors are installed
 - Door: Physical entry point with access control
 - Access Mode: How door grants access (card, biometric, PIN, etc.)
@@ -486,8 +501,14 @@ Esta primera aproximación visual de alto nivel nos permitió explorar el landsc
 
 ---
 
+<<<<<<< HEAD
 ## Organization context
 
+=======
+## Access Control
+
+TERMS:
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 - Access User: Person who passes through physical doors
 - Access Policy: Set of rules defining who can access
 - Schedule: Time windows for access (workdays, hours)
@@ -499,8 +520,14 @@ Esta primera aproximación visual de alto nivel nos permitió explorar el landsc
 
 ---
 
+<<<<<<< HEAD
 ## Security context
 
+=======
+## Security
+
+TERMS:
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 - Security Alert: Notification of suspicious/unsafe activity
 - Access Denial Reason: Why access was denied (invalid credentials, out of schedule, policy violation)
 - Repeated Failed Attempts: Multiple failed access attempts
@@ -512,11 +539,22 @@ Esta primera aproximación visual de alto nivel nos permitió explorar el landsc
 
 ---
 
+<<<<<<< HEAD
 ## Subscription context
 
 - Subscription Plan: Paid tier (Principiante, Eventos, Corporativo)
+=======
+## Billing
+
+TERMS:
+- Subscription Plan: Paid tier (FREE, PROFESSIONAL, ENTERPRISE)
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 - Subscription Upgrade/Downgrade: Plan level changes
 - Payment Failure: Failed billing transaction
 - Billing Renewal: Automatic recurring payment
 - History Archive: Storing old access logs
+<<<<<<< HEAD
 - Deactivation: Disabling user/location access
+=======
+- Deactivation: Disabling user/location access
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940

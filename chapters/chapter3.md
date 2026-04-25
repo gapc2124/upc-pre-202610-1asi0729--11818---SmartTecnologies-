@@ -43,7 +43,10 @@
 
 ## Historias de Usuario No Funcionales (30)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 | ID | Título | Descripción | Criterios de Aceptación (Gherkin) | Epic Relacionada |
 | :--- | :--- | :--- | :--- | :--- |
 | **HNF-01** | Latencia Dashboard | Actualización inmediata. | **Dado** que ocurre validación en puerta, **Cuando** la DB registra el evento, **Entonces** actualiza el dashboard en < 1 segundo. | **EPIC-08** |
@@ -90,6 +93,10 @@
 | **TS-06** | Validación de DTOs | Implementar validación de esquemas de entrada (Data Transfer Objects) en cada request. | Cualquier payload que no cumpla con el tipo de dato o longitud debe ser rechazado con un error `400 Bad Request`. |
 | **TS-07** | Manejo de Excepciones | Crear un Global Exception Filter para capturar errores y evitar fugas de stack trace. | En modo producción, los errores `500` no deben revelar detalles de la base de datos o líneas de código. |
 | ****TS-08**** | CORS Policy | Configurar políticas de Cross-Origin Resource Sharing. | La API solo debe aceptar peticiones desde los dominios autorizados de la aplicación web y el simulador. |
+<<<<<<< HEAD
+=======
+
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 ## Definición de Epics (Módulos Generales)
 
 | Epic ID | Nombre de la Epic | Descripción |
@@ -108,7 +115,11 @@
 
 ## 3.2. Impact Mapping
 
+<<<<<<< HEAD
 |<img src="/Resources/Chapter3/MapaImpacto.png" alt="Mapa de Impacto" width="500"/> |
+=======
+|<img src="../Resources/Herramientas/MapaImpacto.png" alt="Mapa de Impacto" width="500"/> |
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
 
 ## 3.3. Product Backlog
 
@@ -185,3 +196,20 @@
 | 67 | **HNF-25** | Consumo batería | Como guardia con tablet, deseo que la app esté optimizada para no agotar la batería durante el turno. | 1 |
 | 68 | **HNF-28** | Regla 3 clics | Como usuario, deseo llegar a cualquier función principal en máximo 3 clics para mejorar mi productividad. | 1 |
 ---
+<<<<<<< HEAD
+=======
+
+* Evidencia de herramienta utilizada : **Jira : **
+
+|<img src="../Resources/Herramientas/story_points.png" alt="Story Points" width="500"/> |
+
+* Evidencia de herramienta utilizada : **Jira : **
+
+|<img src="../Resources/Herramientas/formato.png" alt="Formato de HU" width="500"/> |
+
+* Evidencia de herramienta utilizada : **Jira : **
+
+|<img src="../Resources/Herramientas/organizacion.png" alt="Estructura de prioridad" width="500"/> |
+
+<https://upc-team-open-source.atlassian.net/jira/software/projects/SMAR/boards/1?atlOrigin=eyJpIjoiNDFhNzk1OTIxMGU0NDc5ZjlmYjliMzlmYjU2MDVmOTIiLCJwIjoiaiJ9>
+>>>>>>> 078063ae4657911fb2e979558428d98cc822a940
