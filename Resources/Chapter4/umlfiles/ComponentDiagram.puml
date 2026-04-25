@@ -1,0 +1,58 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+' Layout configurations
+LAYOUT_WITH_LEGEND()
+title Component Diagram for Core Backend API - SmartLock
+
+' External Systems & Containers interacting with the API
+Container(web_app, "Web Application", "Angular, TypeScript", "Provides administrative interface.")
+Container(mobile_app, "Scanner Mobile App", "Flutter / React Native", "Provides QR scanning capabilities.")
+
+System_Ext(aws_ses, "AWS SES", "External email delivery service.")
+System_Ext(twilio, "Twilio API", "External messaging service for SMS.")
+ContainerDb(database, "Relational Database", "MySQL 8.0 (AWS RDS)", "Stores user profiles, rules, and audit logs.")
+
+' Core Backend API Boundary
+Container_Boundary(backend_api, "Core Backend API (Java, Spring Boot)") {
+
+    ' Controllers (Presentation Layer of the API)
+    Component(auth_ctrl, "Auth & Security Controller", "Spring REST Controller", "Provides endpoints for login, 2FA verification, and JWT issuance.")
+    Component(access_ctrl, "Access Validation Controller", "Spring REST Controller", "Provides endpoints for dynamic QR generation and real-time scan validation.")
+    Component(space_ctrl, "Space Manager Controller", "Spring REST Controller", "Provides endpoints for CRUD operations on physical spaces, doors, and schedules.")
+
+    ' Services (Domain / Business Logic Layer)
+    Component(auth_svc, "Authentication Service", "Spring @Service", "Validates credentials, implements RBAC, and manages the JWT lifecycle.")
+    Component(cred_svc, "Access Credential Service", "Spring @Service (Core Domain)", "Evaluates access rules, generates cryptographic QR signatures, and processes access grants/denials.")
+    Component(notification_pub, "Notification Publisher", "Spring ApplicationEventPublisher", "Asynchronously delegates security alerts and emails to prevent blocking the main thread.")
+
+    ' Repositories (Infrastructure / Data Access Layer)
+    Component(audit_repo, "Audit & Log Repository", "Spring Data JPA Repository", "Provides methods to securely write and read immutable access logs and security events.")
+    Component(domain_repo, "Domain Data Repository", "Spring Data JPA Repository", "Manages persistence for users, organizations, doors, and policies.")
+}
+
+' Relationships - Ingress to Controllers
+Rel(web_app, auth_ctrl, "Makes API calls to", "JSON/HTTPS")
+Rel(web_app, space_ctrl, "Makes API calls to", "JSON/HTTPS")
+Rel(mobile_app, access_ctrl, "Validates scanned QR payloads via", "JSON/HTTPS")
+
+' Relationships - Controllers to Services
+Rel(auth_ctrl, auth_svc, "Delegates authentication to")
+Rel(space_ctrl, cred_svc, "Delegates rule configuration to")
+Rel(access_ctrl, cred_svc, "Delegates QR validation to")
+
+' Relationships - Services to Repositories & Publishers
+Rel(cred_svc, audit_repo, "Logs access attempts to")
+Rel(cred_svc, domain_repo, "Reads access policies from")
+Rel(cred_svc, notification_pub, "Triggers security events via")
+Rel(auth_svc, domain_repo, "Reads user credentials from")
+
+' Relationships - Repositories to Database
+Rel(audit_repo, database, "Writes immutable logs to", "JDBC")
+Rel(domain_repo, database, "Reads/Writes business data to", "JDBC")
+
+' Relationships - Publisher to External Systems
+Rel(notification_pub, aws_ses, "Dispatches email payloads to", "HTTPS")
+Rel(notification_pub, twilio, "Dispatches SMS payloads to", "HTTPS")
+
+@enduml

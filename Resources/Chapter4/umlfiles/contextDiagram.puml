@@ -1,0 +1,29 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' Layout configurations
+LAYOUT_WITH_LEGEND()
+title System Context Diagram for SmartLock
+
+' Actors (Users)
+Person(admin, "Administrator / Organizer", "Manages physical spaces, assigns user permissions, and reviews access audit reports.")
+Person(staff, "Security Staff", "Uses the mobile application to scan and validate dynamic QR codes at entry points in real-time.")
+Person(attendee, "Employee / Attendee", "Receives digital credentials (QR) and presents them to gain physical access.")
+
+' The Core System
+System(smartlock, "SmartLock System", "Cloud-based access control platform that generates dynamic QR credentials, evaluates business rules, and maintains an immutable audit log.")
+
+' External Systems
+System_Ext(aws_ses, "AWS SES", "External email delivery service.")
+System_Ext(twilio, "Twilio API", "External messaging service.")
+
+' Relationships - Users to System
+Rel(admin, smartlock, "Configures spaces, manages rules, and views reports", "HTTPS")
+Rel(staff, smartlock, "Validates QR codes and monitors alerts", "HTTPS")
+Rel(attendee, smartlock, "Receives and visualizes QR credentials", "HTTPS")
+
+' Relationships - System to External Systems
+Rel(smartlock, aws_ses, "Delegates email sending (invitations, critical alerts)", "HTTPS/SMTP")
+Rel(smartlock, twilio, "Delegates SMS delivery (security notifications)", "HTTPS")
+
+@enduml

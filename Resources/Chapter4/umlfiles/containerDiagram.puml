@@ -1,0 +1,46 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+' Layout configurations
+LAYOUT_WITH_LEGEND()
+title Container Diagram for SmartLock System
+
+' Actors
+Person(admin, "Administrator / Organizer", "Manages physical spaces, assigns user permissions, and reviews access audit reports.")
+Person(staff, "Security Staff", "Uses the mobile application to scan and validate dynamic QR codes at entry points.")
+Person(attendee, "Employee / Attendee", "Receives digital credentials (QR) and presents them to gain physical access.")
+
+' External Systems
+System_Ext(aws_ses, "AWS SES", "External email delivery service.")
+System_Ext(twilio, "Twilio API", "External messaging service for SMS.")
+
+' System Boundary
+System_Boundary(smartlock_system, "SmartLock System") {
+
+    Container(landing_page, "Landing Page", "HTML, CSS, JavaScript", "Provides product information and directs users to the platform. Hosted on AWS S3/CloudFront.")
+
+    Container(web_app, "Web Application", "Angular, TypeScript, TailwindCSS", "Provides all the SmartLock functionality to administrators via their web browser (SPA). Hosted on AWS S3/CloudFront.")
+
+    Container(mobile_app, "Scanner Mobile App", "Flutter / React Native", "Provides security staff with a fast QR scanner to validate access requests in real-time.")
+
+    Container(backend_api, "Core Backend API", "Java, Spring Boot", "Provides access control logic, dynamic QR generation via cryptography, and evaluates business rules. Hosted on AWS Elastic Beanstalk.")
+
+    ContainerDb(database, "Relational Database", "MySQL 8.0 (AWS RDS)", "Stores user profiles, access rules, physical spaces, and the immutable audit logs.")
+}
+
+' Relationships - Actors to Containers
+Rel(admin, landing_page, "Visits", "HTTPS")
+Rel(admin, web_app, "Configures rules, manages users, and views real-time dashboard using", "HTTPS")
+Rel(staff, mobile_app, "Scans QR codes and receives access alerts using", "HTTPS")
+Rel(attendee, web_app, "Views and downloads their dynamic QR credential using", "HTTPS")
+
+' Relationships - Containers to Containers
+Rel(web_app, backend_api, "Makes API calls to", "JSON/HTTPS")
+Rel(mobile_app, backend_api, "Makes API calls to validate QR codes to", "JSON/HTTPS")
+Rel(backend_api, database, "Reads from and writes to", "JDBC/TCP")
+
+' Relationships - Containers to External Systems
+Rel(backend_api, aws_ses, "Sends email payloads using", "HTTPS")
+Rel(backend_api, twilio, "Sends SMS payloads using", "HTTPS")
+
+@enduml
