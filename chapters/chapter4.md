@@ -131,7 +131,108 @@ El mock-up de alta fidelidad integra la identidad visual de la marca, incluyendo
 ![Landing Page Mock-up](/Resources/Chapter4/LandingPage/Mockup%20Landing%20Page.png)
 * **Detalles estéticos:** Uso de contrastes para mejorar la legibilidad y elementos visuales que refuerzan la confianza y modernidad del sistema **SmartLock**.
 ## 4.4. Web Applications UX/UI Design.
+Esta sección presenta y explica la propuesta visual y de interacción para las aplicaciones que constituyen la experiencia de usuario con los productos digitales de **SmartLock**.
 ### 4.4.1. Web Applications Wireframes.
+Esta sección presenta los esquemas de baja fidelidad que definen la estructura de la aplicación web. Se ha priorizado la **Arquitectura de Información** mediante un sistema de navegación lateral (Sidebar) que organiza las funciones de gestión de usuarios, eventos y seguridad de forma jerárquica.
+* **Principios de Diseño:** Se aplica el principio de proximidad para agrupar funciones relacionadas (como el perfil de usuario y notificaciones) y consistencia en la ubicación de los elementos de control.
+* **Diseño Inclusivo:** Los wireframes consideran espacios adecuados para elementos interactivos y una disposición clara que facilita el uso de tecnologías de asistencia como lectores de pantalla.
+
+---
+
+#### A. Flujo de Acceso y Autenticación
+
+### Inicio de Sesión
+
+![Inicio Sesión](/Resources/Chapter4/Web-Application/Inicio-sesion.png)
+
+**Descripción:** Wireframe de la pantalla de acceso principal que define la estructura de los campos de autenticación, el botón de inicio de sesión y los elementos de recuperación de acceso.
+
+---
+
+### Registro de Sesión (Sign Up)
+
+![Registro Sesión](/Resources/Chapter4/Web-Application/Registro-Sesion.png)
+
+**Descripción:** Esquema del formulario de registro orientado al alta de nuevos administradores dentro de la plataforma, mostrando la distribución lógica de los campos requeridos.
+
+---
+
+### Autenticación de Dos Factores (2FA)
+
+![Autenticación 2FA](/Resources/Chapter4/Web-Application/Autenticacion-2FA.png)
+
+**Descripción:** Diseño estructural de la segunda capa de seguridad mediante verificación por código, enfocado en la simplicidad de interacción y validación segura del usuario.
+
+---
+
+#### B. Configuración de Infraestructura
+
+### Creación de Sedes (Plan Principiante)
+
+![Crear Sedes](/Resources/Chapter4/Web-Application/crear-sedes-plan-principiante.png)
+
+**Descripción:** Wireframe del proceso inicial de configuración de sedes, donde se organizan los campos necesarios para el despliegue y administración básica del sistema.
+
+---
+
+### Dashboard de Puntos de Control
+
+![Dashboard Puntos de Control](/Resources/Chapter4/Web-Application/Dashboard-Puntos-de-Control.png)
+
+**Descripción:** Esquema de monitoreo de dispositivos físicos y puntos de acceso, utilizando una distribución visual en cuadrícula para facilitar el control operativo en tiempo real.
+
+---
+
+#### C. Dashboards de Gestión por Niveles
+
+### Dashboard Corporativo
+
+![Dashboard Corporativo](/Resources/Chapter4/Web-Application/Dashboard-corportivo.png)
+
+**Descripción:** Vista de alto nivel orientada a organizaciones empresariales, priorizando métricas globales, indicadores de seguridad y administración multisede.
+
+---
+
+### Dashboard Principiante
+
+![Dashboard Principiante](/Resources/Chapter4/Web-Application/Dashboard-gratuito.png)
+
+**Descripción:** Versión simplificada del panel principal, diseñada para usuarios del plan gratuito, manteniendo consistencia visual y acceso a funciones esenciales.
+
+---
+
+#### D. Administración de Seguridad y Personal
+
+### Dashboard de Usuarios
+
+![Dashboard Usuarios](/Resources/Chapter4/Web-Application/Dashboard-usuarios.png)
+
+**Descripción:** Distribución estructural del módulo de gestión de usuarios, incluyendo filtros, tabla de registros, búsqueda avanzada y administración de permisos.
+
+---
+
+### Gestión de Eventos
+
+![Dashboard Eventos](/Resources/Chapter4/Web-Application/Dashboard-eventos.png)
+
+**Descripción:** Módulo orientado a la configuración de accesos temporales mediante eventos programados, permitiendo restricciones horarias y control de visitantes.
+
+---
+
+### Gestión de Credenciales
+
+![Dashboard Credenciales](/Resources/Chapter4/Web-Application/Dashboard-Credenciales.png)
+
+**Descripción:** Organización funcional del sistema de emisión y control de credenciales digitales, permitiendo el seguimiento de accesos autorizados.
+
+---
+
+### Bitácora de Accesos
+
+![Dashboard Bitácora](/Resources/Chapter4/Web-Application/Dashboard-Bitacora.png)
+
+**Descripción:** Estructura diseñada para la visualización de logs históricos de acceso, facilitando auditorías de seguridad y trazabilidad de eventos.
+
 ### 4.4.2. Web Applications Wireflow Diagrams.
 ### 4.4.3. Web Applications Mock-ups.
 ### 4.4.4. Web Applications User Flow Diagrams.
