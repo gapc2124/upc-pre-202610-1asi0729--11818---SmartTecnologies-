@@ -257,6 +257,44 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 ### 4.4.3. Web Applications Mock-ups.
+Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de SmartLock. Estos diseños representan la apariencia visual final del sistema, incluyendo identidad visual, paleta de colores, tipografía, distribución de componentes y experiencia de usuario orientada a la implementación real del producto.
+
+---
+
+#### A. Flujo de Acceso y Seguridad
+
+### Inicio de Sesión
+
+![Inicio de Sesión Mockup](/Resources/Chapter4/Web-Application/Inicio Sesión-Mockup.png)
+
+**Descripción:** Mock-up de la pantalla principal de acceso al sistema, donde se visualiza la interfaz final de autenticación con diseño visual completo, jerarquía de botones y elementos de recuperación de acceso.
+
+---
+
+### Registro de Sesión (Sign Up)
+
+![Registro de Sesión Mockup](/Resources/Chapter4/Web-Application/Registro Sesión-Mockup.png)
+
+**Descripción:** Representación visual del formulario de registro de nuevos administradores, mostrando el diseño definitivo de campos, validaciones visuales y estructura de navegación.
+
+---
+
+### Autenticación de Dos Factores (2FA)
+
+![Autenticación 2FA Mockup](/Resources/Chapter4/Web-Application/Autentificación de 2 Factores-Mockup.png)
+
+**Descripción:** Diseño final de la segunda capa de seguridad mediante código de verificación, enfocado en claridad visual, seguridad y facilidad de uso para el usuario.
+
+---
+#### B. Configuración de Infraestructura
+
+### Dashboard Plan Principiante
+
+![Dashboard Plan Principiante Mockup](/Resources/Chapter4/Web-Application/Dashboard- Plan Principiante-Mockup.png)
+
+**Descripción:** Mock-up del panel principal para usuarios del plan principiante, presentando una interfaz simplificada con acceso rápido a funciones esenciales y monitoreo básico del sistema.
+
+---
 ### 4.4.4. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
 <<<<<<< HEAD
