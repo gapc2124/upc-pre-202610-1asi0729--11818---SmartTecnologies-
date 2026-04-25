@@ -446,8 +446,7 @@ En este mapa se ilustra el proceso tradicional y reactivo que debe seguir Carlos
 **Escenario evaluado:** Control de acceso y validación de aforo durante la "hora pico" de un evento masivo.
 Este escenario detalla el momento más crítico para Valeria: la apertura de puertas de un evento utilizando listas de Excel impresas y validación manual. Se destacan las acciones de su personal de seguridad (staff), la frustración ante la lentitud del proceso, la presión por las largas colas de asistentes y la imposibilidad de tener un conteo real del aforo en tiempo real para reportar a Defensa Civil.
 
-![As-is Scenario Map - Valeria Rios](/Resources/Chapter2/docs/Valeria-As-is-Scenario.png)
-
+![As-is Scenario Map - Valeria Rios](../docs/Valeria-As-is-Scenario.png)
 ## 2.4. Big Picture Event Storming
 
 En esta sección, el equipo introduce y resume el proceso colaborativo realizado para entender el dominio del negocio de **SmartLock**. Durante la sesión, nos enfocamos en identificar los eventos significativos, procesos clave y las relaciones entre ellos, permitiéndonos mapear el flujo completo desde que un usuario solicita un acceso hasta que la cerradura se activa mediante el código QR dinámico.
@@ -463,9 +462,8 @@ Esta primera aproximación visual de alto nivel nos permitió explorar el landsc
 * **Definición de Actores y Sistemas:** Vinculamos los eventos con los usuarios (clientes/visitantes) y sistemas externos (servicios de nube y dispositivos IoT).
 
 ## 2.5. Ubiquitous Language
-## Identity & Auth
+## Authentication context
 
-TERMS:
 - Subscription: Platform tenant subscription
 - System User: Admin/Operator/Auditor who accesses the web platform
 - Authentication: Verifying user identity (login + 2FA)
@@ -478,9 +476,8 @@ TERMS:
 
 ---
 
-## Physical Space
+## Organization context
 
-TERMS:
 - Location: Physical site/office where doors are installed
 - Door: Physical entry point with access control
 - Access Mode: How door grants access (card, biometric, PIN, etc.)
@@ -489,9 +486,8 @@ TERMS:
 
 ---
 
-## Access Control
+## Organization context
 
-TERMS:
 - Access User: Person who passes through physical doors
 - Access Policy: Set of rules defining who can access
 - Schedule: Time windows for access (workdays, hours)
@@ -503,9 +499,8 @@ TERMS:
 
 ---
 
-## Security
+## Security context
 
-TERMS:
 - Security Alert: Notification of suspicious/unsafe activity
 - Access Denial Reason: Why access was denied (invalid credentials, out of schedule, policy violation)
 - Repeated Failed Attempts: Multiple failed access attempts
@@ -517,14 +512,11 @@ TERMS:
 
 ---
 
-## Billing
+## Subscription context
 
-TERMS:
-- Subscription Plan: Paid tier (FREE, PROFESSIONAL, ENTERPRISE)
+- Subscription Plan: Paid tier (Principiante, Eventos, Corporativo)
 - Subscription Upgrade/Downgrade: Plan level changes
 - Payment Failure: Failed billing transaction
 - Billing Renewal: Automatic recurring payment
 - History Archive: Storing old access logs
 - Deactivation: Disabling user/location access
-
----

@@ -137,79 +137,58 @@ El mock-up de alta fidelidad integra la identidad visual de la marca, incluyendo
 ### 4.4.4. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
 ## 4.6. Domain-Driven Software Architecture.
+### 4.6.1. Design-Level Event Storming.
+En esta sección se detalla el diseño táctico del sistema, profundizando en la arquitectura y los componentes técnicos necesarios para implementar la solución. A diferencia del Big Picture, el DesignLevel Event Storming se enfoca en definir los límites de los agregados, los comandos que disparan cambios de estado y las políticas que gobiernan las reglas de negocio.
 
-En esta sección se define la arquitectura de software de **SmartLock** utilizando los principios de Diseño Orientado al Dominio (Domain-Driven Design - DDD). Nuestro enfoque busca alinear la complejidad técnica del sistema con las necesidades reales del negocio (control de accesos "Asset-Light"). 
+<p align="center">
+  <img src="../Resources/Chapter4/eventStormin/design-level.jpeg" width="800">
+</p>
 
-Para la representación de la arquitectura, utilizaremos el **Modelo C4**, el cual nos permite visualizar el sistema en diferentes niveles de abstracción (Contexto, Contenedores y Componentes), facilitando la comprensión tanto para *stakeholders* de negocio como para el equipo de desarrollo. El stack tecnológico base seleccionado incluye React con TypeScript para el Frontend, Python para el Backend, y despliegue en la infraestructura de AWS.
+#### Authentication Context
+Actúa como la puerta de entrada digital al ecosistema de SmartLock, gestionando los procesos de registro y acceso de los usuarios administrativos. Este componente se encarga de validar las credenciales de identidad y de implementar medidas de seguridad reforzadas, como la verificación en dos pasos (2FA), para garantizar que solo las personas legítimas ingresen al sistema. Además, supervisa la integridad de las sesiones activas, aplicando reglas automáticas que protegen la cuenta global ante cualquier cambio de seguridad o intento de acceso no autorizado.
 
-### 4.6.1. Design-Level Event Storming
+<p align="center">
+  <img src="../Resources/Chapter4/eventStormin/authentication-context.png" width="800">
+</p>
 
-En esta sección se detalla el diseño táctico del sistema, profundizando en la arquitectura y los componentes técnicos necesarios para implementar la solución. A diferencia del Big Picture, el **Design-Level Event Storming** se enfoca en definir los límites de los agregados, los comandos que disparan cambios de estado y las políticas que gobiernan las reglas de negocio.
+#### Organization Context
+Constituye el núcleo operativo del sistema, encargado de estructurar la jerarquía institucional y física de cada cliente. Este componente facilita la creación de entidades globales, la gestión de sedes o sitios específicos y el registro técnico de cada punto de acceso o puerta dentro de la plataforma. Al centralizar esta estructura, el sistema asegura que la administración de los espacios físicos sea coherente y escalable, sirviendo como la base informativa necesaria para que los demás módulos operen según la distribución administrativa de la organización.
 
-![Design-Level Event Storming](/Resources/Chapter4/eventStormin/design-level.jpeg)
+<p align="center">
+  <img src="../Resources/Chapter4/eventStormin/organization-context.png" width="800">
+</p>
 
-**Descripción de los componentes identificados:**
+#### Security Context
+Centraliza la gestión de identidades y la integridad del sistema SmartLock, asegurando que solo el personal autorizado interactúe con la infraestructura física. Este componente se encarga de validar el acceso en tiempo real y coordinar las respuestas automáticas ante situaciones críticas o intentos de intrusión. Al aislar estas funciones, se garantiza una capa de protección robusta que salvaguarda tanto la información digital como la seguridad de los espacios físicos administrados.
+<p align="center">
+  <img src="../Resources/Chapter4/eventStormin/security-context.png" height="600">
+</p>
 
-* **Comandos (Azul):** Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso").
-* **Agregados (Amarillo):** Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando.
-* **Políticas (Lila):** Definen reacciones automáticas del sistema ante eventos específicos ("Siempre que ocurra el Evento X, ejecutar el Comando Y").
-* **Modelos de Lectura (Verde):** Representan la información que el usuario visualiza en la interfaz para poder tomar una decisión y ejecutar un comando.
-* **Eventos de Dominio (Naranja):** Indican que algo relevante para el negocio ha sucedido exitosamente (ej. "Código QR Generado", "Acceso Denegado").
+#### Subscription Plan Context
+Administra los planes comerciales y el modelo de facturación para cada organización dentro de la plataforma. Este componente es responsable de definir los niveles de servicio, gestionar los ciclos de pago y establecer los límites operativos, como el número permitido de puertas o usuarios según el plan adquirido.
+<p align="center">
+  <img src="../Resources/Chapter4/eventStormin/subscription-plan-context.png" width="750">
+</p>
+
+#### User Context
+Gestiona integralmente los perfiles y permisos de las personas que interactúan con la plataforma, distinguiendo claramente entre el personal administrativo y los usuarios de acceso físico. Este componente se encarga de dar de alta, actualizar o dar de baja a los miembros del sistema, asegurando que cada individuo cuente con las atribuciones necesarias según su rol dentro de la organización. Al centralizar esta administración, el sistema facilita un control preciso sobre quién puede operar el software y quién tiene permitido el ingreso a las instalaciones, manteniendo siempre un registro actualizado de todas las identidades activas.
+
+<p align="center">
+  <img src="../Resources/Chapter4/eventStormin/user-context.png" width="550">
+</p>
+
+Descripción de los componentes identificados:
+- Comandos (Azul): Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso"). 
+- Agregados (Amarillo): Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando. 
+- Políticas (Lila): Definen reacciones automáticas del sistema ante eventos específicos ("Siempre que ocurra el Evento X, ejecutar el Comando Y"). 
+- Modelos de Lectura (Verde): Representan la información que el usuario visualiza en la interfaz para poder tomar una decisión y ejecutar un comando. 
+- Eventos de Dominio (Naranja): Indican que algo relevante para el negocio ha sucedido exitosamente (ej. "Código QR Generado", "Acceso Denegado"). 
 
 Este modelado permite al equipo de desarrollo tener una guía clara para la implementación de los servicios y la definición de la lógica en el código.
-### 4.6.2. Software Architecture Context Diagram
 
-In this section, the team introduces the Software Architecture Context Diagram. This high-level overview illustrates the **SmartLock** software system as a central entity, surrounded by the key user personas and the external systems it interacts with to deliver its "Asset-Light" access control value proposition.
-
-![Software Architecture Context Diagram](/Resources/Chapter4/umlfiles/contextDiagram.png)
-
-**Explicación del diagrama:**
-
-* **SmartLock System:** Es el núcleo de la plataforma que centraliza la lógica de generación de códigos QR dinámicos y la validación de reglas de acceso.
-* **Usuarios:** El diagrama identifica al **Administrator** (configuración), **Security Staff** (validación móvil) y **Attendee** (usuario final) como los actores principales.
-* **Sistemas Externos:** Se detalla la integración con **AWS SES** para la gestión de correos electrónicos y **Twilio API** para el envío de alertas críticas de seguridad vía SMS.
-
-### 4.6.3. Software Architecture Container Level Diagram
-
-In this section, the team presents the **Container Diagram** for SmartLock. This diagram expands the system's context to reveal the software containers that compose it (web applications, mobile applications, APIs, and databases). It illustrates the high-level distribution of responsibilities, exposes key technology decisions—such as Angular for the frontend, Java Spring Boot for the backend, and MySQL for persistence—and details how these containers communicate through the AWS cloud infrastructure.
-
-![Software Architecture Container Diagram](/Resources/Chapter4/umlfiles/containerDiagram.png)
-
-#### Diagram Explanation
-
-The Container Diagram breaks down the internal architecture of SmartLock into the following key components:
-
-* **Landing Page & Web Application (Frontend):** Developed using **Angular, TypeScript, and TailwindCSS**. The web application acts as a Single Page Application (SPA) that consumes the backend API. Both containers are hosted on **AWS S3** and distributed globally via **Amazon CloudFront** to ensure low latency and security via HTTPS.
-* **Scanner Mobile App:** A specialized application for security staff, optimized for scanning QR codes and communicating with the server with minimal latency.
-* **Core Backend API:** The system's main engine, developed in **Java using the Spring Boot framework**. It centralizes all domain-driven business logic (DDD), validates access attempts, and generates encrypted dynamic QR codes. It is deployed on **AWS Elastic Beanstalk** for automated load balancing and scaling.
-* **Relational Database:** A **MySQL** database hosted on **Amazon RDS**, serving as the single source of truth. it ensures the immutability of access logs (audit trails) and the integrity of user profiles and access rules.
-* **Communication:** The frontend and mobile app communicate asynchronously with the Backend API via **JSON over HTTPS**. The backend interacts with the database through **JDBC** and with third-party services (AWS SES and Twilio) via REST APIs.
-
-### 4.6.4. Software Architecture Components Diagrams
-
-In this section, the team presents the **Component Diagram** for the Core Backend API container. This diagram zooms into the Java Spring Boot application to illustrate its internal structure based on Domain-Driven Design (DDD) and Layered Architecture. It shows how the system is divided into Controllers (Presentation), Services (Business Logic/Domain), and Repositories (Data Access), and how these components interact to execute the access control logic.
-
-![Software Architecture Component Diagram](/Resources/Chapter4/umlfiles/componentDiagram.png)
-
-#### Diagram Explanation
-
-The Component Diagram breaks down the **Core Backend API** into the following functional layers:
-
-* **Controllers (Presentation Layer):**
-  * **Auth & Security Controller:** Exposes REST endpoints to handle user login, 2FA verification, and JSON Web Token (JWT) issuance.
-  * **Access Validation Controller:** Receives API calls from the Scanner Mobile App to validate dynamic QR payloads in real-time.
-  * **Space Manager Controller:** Provides endpoints for administrators (via the Web App) to perform CRUD operations on physical spaces and configure access schedules.
-
-* **Services (Domain / Business Logic Layer):**
-  * **Access Credential Service (Core Domain):** The heart of the system. It evaluates complex access policies, generates dynamic QR codes using cryptographic signatures, and determines whether an access attempt is granted or denied.
-  * **Authentication Service:** Implements Role-Based Access Control (RBAC) and manages the lifecycle of credentials and tokens.
-  * **Notification Publisher:** Uses the Spring ApplicationEventPublisher to asynchronously delegate alerts to prevent blocking the main execution thread during access validations.
-
-* **Repositories (Infrastructure Layer):**
-  * **Audit & Log Repository:** Uses Spring Data JPA to securely write immutable logs of every access attempt and security event into the database.
-  * **Domain Data Repository:** Manages the persistence of user profiles, organizational data, doors, and policies.
-
-* **Communication Flow:** The web and mobile applications send HTTP requests to the **Controllers**. These controllers delegate the business logic to the **Services**. The services evaluate the rules and use the **Repositories** to interact with the MySQL database via JDBC, or use the **Notification Publisher** to dispatch asynchronous emails and SMS via AWS SES and Twilio.
+### 4.6.2. Software Architecture Context Diagram.
+### 4.6.3. Software Architecture Container Diagrams.
+### 4.6.4. Software Architecture Components Diagrams.
 
 ## 4.7. Software Object-Oriented Design
 
@@ -221,7 +200,7 @@ En esta sección, el equipo presenta el diseño orientado a objetos del software
 
 #### Diagrama de clases (Frontend)
 
-<img src="/Resources/Diagram-Class/Frontend/Class-Diagram-Frontend-image.png">
+<img src="../Resources/Chapter4/Diagram-Class/Frontend/Class-Diagram-Frontend-image.png">
 
 El diagrama organiza el frontend de SmartLock en cinco 
 Bounded Contexts (Authentication, Organization, User, 
@@ -247,7 +226,7 @@ del modelo de negocio.
 
 #### Diagrama de clases (Backend)
 
-<img src="/Resources/Diagram-Class/Backend/Class-Diagram-Backend-image.png">
+<img src="../Resources/Chapter4/Diagram-Class/Backend/Class-Diagram-Backend-image.png">
 
 El backend de nuestro proyecto SmartLock lo hemos armado siguiendo 
 a tope la arquitectura DDD en SpringBoot, separando todo en los 5 
@@ -267,7 +246,7 @@ cambiar algo de la base de datos o la lógica de las suscripciones.
 
 ### 4.8.1. Database Diagrams.
 
-<img src="/Resources/Data-Base-Diagram/Data-Base-Diagram-image.png">
+<img src="../Resources/Chapter4/Data-Base-Diagram/Data-Base-Diagram-image.png">
 
 El diagrama de base de datos para SmartLock se ha estructurado bajo un 
 enfoque de normalización 3FN y Domain-Driven Design (DDD), organizando 
@@ -284,5 +263,3 @@ mapeo de relaciones uno-a-muchos y uno-a-uno mediante claves foráneas
 claras y tipos bigint, lo que permite un manejo eficiente de la carga 
 perezosa (Lazy Loading) y una transición fluida del modelo relacional 
 al código en Spring Boot.
-
----
